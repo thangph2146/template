@@ -1,0 +1,58 @@
+<!-- Header Component -->
+<header class="main-header">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="trang-chu.html" aria-label="Trang chủ Đại học Ngân hàng TP.HCM">
+                <img src="assets/logo/HUB-logo-white.png" alt="HUB Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="trang-chu.html">
+                            <i class="fas fa-home me-1"></i> Trang chủ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="su-kien.html">
+                            <i class="fas fa-calendar-alt me-1"></i> Sự kiện
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="eventTypeDropdownLink" aria-expanded="false" aria-haspopup="true">
+                            <i class="fas fa-filter me-1"></i> Loại sự kiện
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventTypeDropdownLink">
+                            <li><a class="dropdown-item filter-btn" data-filter="all" href="su-kien.html">Tất cả</a></li>
+                            <li><a class="dropdown-item filter-btn" data-filter="1" href="su-kien.html?type=1">Hội thảo</a></li>
+                            <li><a class="dropdown-item filter-btn" data-filter="2" href="su-kien.html?type=2">Hội nghị</a></li>
+                            <li><a class="dropdown-item filter-btn" data-filter="3" href="su-kien.html?type=3">Workshop</a></li>
+                            <li><a class="dropdown-item filter-btn" data-filter="4" href="su-kien.html?type=4">Khác</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <i class="fas fa-calendar-alt me-1"></i>Dashboard
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="nguoi-dung/dang-ky-su-kien.html">Đăng ký sự kiện</a></li>
+                            <li><a class="dropdown-item" href="nguoi-dung/lich-su-dang-ky.html">Lịch sử đăng ký</a></li>
+                            <li><a class="dropdown-item" href="nguoi-dung/thong-tin-ca-nhan.html">Thông tin cá nhân</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="https://hub.edu.vn" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm px-3">
+                        <i class="fas fa-external-link-alt me-1"></i> HUB
+                    </a>
+                    <a href="dang-nhap.html" class="btn btn-light btn-sm px-3 me-2 btn-login">
+                        <i class="fas fa-user-plus me-1"></i> Đăng nhập
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header> 

@@ -1,0 +1,101 @@
+/* === HEADER STYLES === */
+:root {
+    --primary: #800000;          /* Đỏ đô chủ đạo */
+    --primary-dark: #5c0000;     /* Đỏ đô đậm */
+    --primary-hover: #a30000;    /* Đỏ đô hover */
+    --primary-light: #ffeeee;    /* Đỏ đô nhạt */
+    --text-dark: #333333;
+    --text-gray: #6c757d;
+    --white: #ffffff;
+    --light-gray: #f8f8f8;
+    --medium-gray: #e9ecef;
+    --border-gray: #dee2e6;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    --border-radius: 4px;
+}
+
+/* Header styles */
+.main-header {
+    background-color: var(--primary);
+}
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+    padding: 10px 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--white);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.hub-logo {
+    font-weight: 700;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+}
+
+.dropdown-item {
+    padding: 8px 16px;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary-light);
+    color: var(--primary);
+}
+
+/* Breadcrumb styles */
+.breadcrumb-container {
+    background-color: #f0f0f0;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.breadcrumb {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "›";
+}
+
+/* Mobile responsiveness for header */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 10px 0;
+    }
+    
+    .navbar-brand img {
+        height: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 8px 10px;
+    }
+    
+    .dropdown-menu {
+        border: none;
+        box-shadow: none;
+        padding-left: 20px;
+    }
+} 
