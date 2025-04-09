@@ -1,0 +1,720 @@
+[
+  {
+    "su_kien_id": 1,
+    "ten_su_kien": "Hội thảo khoa học \"Tài chính và Ngân hàng trong kỷ nguyên số\"",
+    "su_kien_poster": {
+      "url": "https://hub.edu.vn/wp-content/uploads/2025/12/hoi-thao-khoa-hoc.jpg",
+      "alt": "Hội thảo khoa học"
+    },
+    "mo_ta": "Hội thảo tập trung vào những thách thức và cơ hội của ngành tài chính ngân hàng trong thời đại số.",
+    "mo_ta_su_kien": "Hội thảo khoa học quốc tế về tài chính và ngân hàng trong kỷ nguyên số là sự kiện học thuật quan trọng, quy tụ các chuyên gia hàng đầu trong lĩnh vực tài chính, ngân hàng và công nghệ.",
+    "chi_tiet_su_kien": "<p>Tham dự hội thảo, quý vị sẽ được:</p><ul><li>Cập nhật những kiến thức mới nhất về xu hướng phát triển của ngành tài chính trong bối cảnh số hóa</li><li>Nghe các diễn giả từ Big4 chia sẻ kinh nghiệm và giải pháp</li><li>Cơ hội networking với các chuyên gia hàng đầu</li></ul>",
+    "dia_diem": "CS Tôn Thất Đạm",
+    "dia_chi_cu_the": "36 Tôn Thất Đạm, Quận 1, TP.HCM",
+    "toa_do_gps": "10.772139, 106.702896",
+    "thoi_gian_bat_dau": "2025-06-15 08:00:00",
+    "thoi_gian_ket_thuc": "2025-06-15 17:00:00",
+    "thoi_gian_checkin_bat_dau": "2025-06-15 07:30:00",
+    "thoi_gian_checkin_ket_thuc": "2025-06-15 09:30:00",
+    "loai_su_kien_id": 1,
+    "hinh_thuc": "offline",
+    "don_vi_to_chuc": "Khoa Tài chính Ngân hàng, HUB",
+    "don_vi_phoi_hop": "Hiệp hội Ngân hàng Việt Nam, Phòng Thương mại và Công nghiệp Việt Nam",
+    "doi_tuong_tham_gia": "Sinh viên, giảng viên, chuyên gia tài chính, đại diện doanh nghiệp, các nhà nghiên cứu",
+    "ma_qr_code": "QR1FTKNGUYENSO",
+    "tong_dang_ky": 132,
+    "tong_check_in": 112,
+    "tong_check_out": 105,
+    "cho_phep_check_in": true,
+    "cho_phep_check_out": true,
+    "yeu_cau_face_id": false,
+    "cho_phep_checkin_thu_cong": true,
+    "bat_dau_dang_ky": "2025-05-15 00:00:00",
+    "ket_thuc_dang_ky": "2025-06-14 23:59:59",
+    "han_huy_dang_ky": "2025-06-10 23:59:59",
+    "gio_bat_dau": "2025-06-15 08:00:00",
+    "gio_ket_thuc": "2025-06-15 17:00:00",
+    "so_luong_tham_gia": 150,
+    "so_luong_dien_gia": 6,
+    "gioi_han_loai_nguoi_dung": "all",
+    "tu_khoa_su_kien": "tài chính, ngân hàng, công nghệ, fintech, số hóa",
+    "hashtag": "#HUBFintech2025 #NgânHàngSố",
+    "so_luot_xem": 1326,
+    "slug": "hoi-thao-tai-chinh-ngan-hang-ky-nguyen-so",
+    "status": 1,
+    "version": 1,
+    "lich_trinh": [
+      {
+        "tieu_de": "Đăng ký và khai mạc",
+        "mo_ta": "Đăng ký tham dự và phát tài liệu. Khai mạc hội thảo với phát biểu của đại diện Ban tổ chức.",
+        "thoi_gian_bat_dau": "2025-06-15 08:00:00",
+        "thoi_gian_ket_thuc": "2025-06-15 09:00:00",
+        "nguoi_phu_trach": "Ban tổ chức"
+      },
+      {
+        "tieu_de": "Phiên thảo luận chính",
+        "mo_ta": "Tham luận của các diễn giả về các chủ đề chính của hội thảo: Xu hướng công nghệ tài chính, thách thức và cơ hội.",
+        "thoi_gian_bat_dau": "2025-06-15 09:00:00",
+        "thoi_gian_ket_thuc": "2025-06-15 11:30:00",
+        "nguoi_phu_trach": "GS.TS. Nguyễn Văn A - Chủ tịch Hiệp hội Fintech VN"
+      },
+      {
+        "tieu_de": "Giải lao",
+        "mo_ta": "Nghỉ giải lao, tiệc trà và networking",
+        "thoi_gian_bat_dau": "2025-06-15 11:30:00",
+        "thoi_gian_ket_thuc": "2025-06-15 13:00:00",
+        "nguoi_phu_trach": "Ban hậu cần"
+      },
+      {
+        "tieu_de": "Phát biểu của khách mời",
+        "mo_ta": "Phần trình bày của các khách mời đặc biệt từ các ngân hàng và công ty công nghệ tài chính hàng đầu",
+        "thoi_gian_bat_dau": "2025-06-15 13:00:00",
+        "thoi_gian_ket_thuc": "2025-06-15 15:00:00",
+        "nguoi_phu_trach": "Đại diện các doanh nghiệp"
+      },
+      {
+        "tieu_de": "Tọa đàm và hỏi đáp",
+        "mo_ta": "Tọa đàm với sự tham gia của tất cả diễn giả, chia sẻ kinh nghiệm và trả lời câu hỏi từ người tham dự",
+        "thoi_gian_bat_dau": "2025-06-15 15:00:00",
+        "thoi_gian_ket_thuc": "2025-06-15 16:30:00",
+        "nguoi_phu_trach": "Ban tổ chức và Diễn giả"
+      },
+      {
+        "tieu_de": "Tổng kết và bế mạc",
+        "mo_ta": "Tổng kết các nội dung của hội thảo và bế mạc",
+        "thoi_gian_bat_dau": "2025-06-15 16:30:00",
+        "thoi_gian_ket_thuc": "2025-06-15 17:00:00",
+        "nguoi_phu_trach": "Ban tổ chức"
+      }
+    ]
+  },
+  {
+    "su_kien_id": 2,
+    "ten_su_kien": "Ngày hội việc làm HUB lần thứ 13 - Năm 2025",
+    "su_kien_poster": {
+      "url": "https://hub.edu.vn/wp-content/uploads/2025/12/ngay-hoi-viec-lam.jpeg",
+      "alt": "Ngày hội việc làm"
+    },
+    "mo_ta": "Cơ hội kết nối với hơn 50 doanh nghiệp hàng đầu trong lĩnh vực tài chính, ngân hàng và công nghệ.",
+    "mo_ta_su_kien": "Ngày hội việc làm là sự kiện thường niên của trường, giúp kết nối sinh viên với các nhà tuyển dụng hàng đầu trong lĩnh vực tài chính, ngân hàng và công nghệ.",
+    "chi_tiet_su_kien": "<p>Tham gia ngày hội việc làm, bạn sẽ có cơ hội:</p><ul><li>Gặp gỡ trực tiếp nhà tuyển dụng từ 50+ doanh nghiệp hàng đầu</li><li>Ứng tuyển vào các vị trí thực tập và việc làm chính thức</li><li>Tham gia các workshop về kỹ năng phỏng vấn, viết CV</li><li>Networking với cựu sinh viên thành đạt</li></ul>",
+    "dia_diem": "CS Hoàng Diệu",
+    "dia_chi_cu_the": "56 Hoàng Diệu 2, Quận Thủ Đức, TP.HCM",
+    "toa_do_gps": "10.789456, 106.723158",
+    "thoi_gian_bat_dau": "2025-06-22 08:30:00",
+    "thoi_gian_ket_thuc": "2025-06-22 16:30:00",
+    "thoi_gian_checkin_bat_dau": "2025-06-22 08:00:00",
+    "thoi_gian_checkin_ket_thuc": "2025-06-22 10:00:00",
+    "loai_su_kien_id": 2,
+    "hinh_thuc": "offline",
+    "don_vi_to_chuc": "Phòng Công tác Sinh viên HUB",
+    "don_vi_phoi_hop": "Hội Sinh viên, Đoàn Thanh niên, Trung tâm hỗ trợ việc làm",
+    "doi_tuong_tham_gia": "Sinh viên năm cuối, cựu sinh viên, nhà tuyển dụng",
+    "ma_qr_code": "QR2JOBFAIR13",
+    "tong_dang_ky": 168,
+    "tong_check_in": 145,
+    "tong_check_out": 120,
+    "cho_phep_check_in": true,
+    "cho_phep_check_out": true,
+    "yeu_cau_face_id": false,
+    "cho_phep_checkin_thu_cong": true,
+    "bat_dau_dang_ky": "2025-05-22 00:00:00",
+    "ket_thuc_dang_ky": "2025-06-21 23:59:59",
+    "han_huy_dang_ky": "2025-06-19 23:59:59",
+    "gio_bat_dau": "2025-06-22 08:30:00",
+    "gio_ket_thuc": "2025-06-22 16:30:00",
+    "so_luong_tham_gia": 500,
+    "so_luong_dien_gia": 0,
+    "gioi_han_loai_nguoi_dung": "sinh_vien,cuu_sinh_vien",
+    "tu_khoa_su_kien": "việc làm, tuyển dụng, thực tập, ngân hàng, tài chính",
+    "hashtag": "#HUBJobFair2025 #CareerDay",
+    "so_luot_xem": 980,
+    "slug": "ngay-hoi-viec-lam-hub-lan-13-2025",
+    "status": 1,
+    "version": 1,
+    "lich_trinh": [
+      {
+        "tieu_de": "Khai mạc Ngày hội",
+        "mo_ta": "Khai mạc và giới thiệu về ngày hội việc làm",
+        "thoi_gian_bat_dau": "2025-06-22 08:30:00",
+        "thoi_gian_ket_thuc": "2025-06-22 09:00:00",
+        "nguoi_phu_trach": "Ban tổ chức"
+      },
+      {
+        "tieu_de": "Gian hàng tuyển dụng",
+        "mo_ta": "Thời gian để sinh viên tham quan các gian hàng và phỏng vấn",
+        "thoi_gian_bat_dau": "2025-06-22 09:00:00",
+        "thoi_gian_ket_thuc": "2025-06-22 12:00:00",
+        "nguoi_phu_trach": "Các doanh nghiệp tham gia"
+      },
+      {
+        "tieu_de": "Workshop Kỹ năng viết CV",
+        "mo_ta": "Hướng dẫn viết CV ấn tượng cho sinh viên",
+        "thoi_gian_bat_dau": "2025-06-22 13:00:00",
+        "thoi_gian_ket_thuc": "2025-06-22 14:00:00",
+        "nguoi_phu_trach": "Chuyên gia tuyển dụng VietnamWorks"
+      },
+      {
+        "tieu_de": "Workshop Kỹ năng phỏng vấn",
+        "mo_ta": "Chia sẻ kinh nghiệm và kỹ năng phỏng vấn thành công",
+        "thoi_gian_bat_dau": "2025-06-22 14:30:00",
+        "thoi_gian_ket_thuc": "2025-06-22 15:30:00",
+        "nguoi_phu_trach": "Đại diện HR từ Big4"
+      },
+      {
+        "tieu_de": "Bế mạc và quay số trúng thưởng",
+        "mo_ta": "Tổng kết ngày hội và chương trình quay số trúng thưởng",
+        "thoi_gian_bat_dau": "2025-06-22 16:00:00",
+        "thoi_gian_ket_thuc": "2025-06-22 16:30:00",
+        "nguoi_phu_trach": "Ban tổ chức"
+      }
+    ]
+  },
+  {
+    "su_kien_id": 3,
+    "ten_su_kien": "Workshop \"Kỹ năng phân tích dữ liệu trong lĩnh vực tài chính\"",
+    "su_kien_poster": {
+      "url": "https://hub.edu.vn/wp-content/uploads/2025/11/hoi-thao-dinh-huong-nghe.jpg",
+      "alt": "Workshop kỹ năng"
+    },
+    "mo_ta": "Học hỏi các kỹ năng phân tích dữ liệu cơ bản và nâng cao, ứng dụng thực tế trong ngành tài chính.",
+    "mo_ta_su_kien": "Workshop thực hành về phân tích dữ liệu tài chính, cung cấp kiến thức và kỹ năng thực tế cho người tham dự về việc sử dụng các công cụ phân tích dữ liệu hiện đại.",
+    "chi_tiet_su_kien": "<p>Workshop này sẽ giúp bạn:</p><ul><li>Nắm vững các kỹ thuật phân tích dữ liệu tài chính</li><li>Thực hành với các công cụ như Python, R và Power BI</li><li>Học cách xây dựng mô hình dự báo tài chính</li><li>Tham gia giải quyết các case study thực tế</li></ul>",
+    "dia_diem": "CS Hàm Nghi",
+    "dia_chi_cu_the": "36 Hàm Nghi, Quận 1, TP.HCM",
+    "toa_do_gps": "10.771225, 106.703341",
+    "thoi_gian_bat_dau": "2025-06-30 09:00:00",
+    "thoi_gian_ket_thuc": "2025-06-30 16:00:00",
+    "thoi_gian_checkin_bat_dau": "2025-06-30 08:30:00",
+    "thoi_gian_checkin_ket_thuc": "2025-06-30 10:00:00",
+    "loai_su_kien_id": 3,
+    "hinh_thuc": "hybrid",
+    "don_vi_to_chuc": "Bộ môn Tin học Tài chính, HUB",
+    "don_vi_phoi_hop": "CLB Data Science, Trung tâm Đổi mới Sáng tạo",
+    "doi_tuong_tham_gia": "Sinh viên chuyên ngành tài chính, kế toán, kiểm toán, và công nghệ thông tin",
+    "ma_qr_code": "QR3DATAWORKSHOP",
+    "tong_dang_ky": 143,
+    "tong_check_in": 98,
+    "tong_check_out": 85,
+    "cho_phep_check_in": true,
+    "cho_phep_check_out": true,
+    "yeu_cau_face_id": false,
+    "cho_phep_checkin_thu_cong": true,
+    "bat_dau_dang_ky": "2025-06-01 00:00:00",
+    "ket_thuc_dang_ky": "2025-06-28 23:59:59",
+    "han_huy_dang_ky": "2025-06-25 23:59:59",
+    "gio_bat_dau": "2025-06-30 09:00:00",
+    "gio_ket_thuc": "2025-06-30 16:00:00",
+    "so_luong_tham_gia": 150,
+    "so_luong_dien_gia": 3,
+    "gioi_han_loai_nguoi_dung": "sinh_vien,giang_vien",
+    "tu_khoa_su_kien": "phân tích dữ liệu, tài chính, big data, workshop, Python, R",
+    "hashtag": "#DataFinance #FinancialAnalytics",
+    "so_luot_xem": 645,
+    "link_online": "https://meet.hub.edu.vn/workshop-phan-tich-du-lieu",
+    "mat_khau_online": "data2025",
+    "slug": "workshop-ky-nang-phan-tich-du-lieu-tai-chinh",
+    "status": 1,
+    "version": 1,
+    "lich_trinh": [
+      {
+        "tieu_de": "Đăng ký và giới thiệu",
+        "mo_ta": "Đăng ký, phát tài liệu và giới thiệu về workshop",
+        "thoi_gian_bat_dau": "2025-06-30 09:00:00",
+        "thoi_gian_ket_thuc": "2025-06-30 09:30:00",
+        "nguoi_phu_trach": "Ban tổ chức"
+      },
+      {
+        "tieu_de": "Cơ bản về phân tích dữ liệu tài chính",
+        "mo_ta": "Giới thiệu các khái niệm cơ bản và công cụ phân tích dữ liệu",
+        "thoi_gian_bat_dau": "2025-06-30 09:30:00",
+        "thoi_gian_ket_thuc": "2025-06-30 10:30:00",
+        "nguoi_phu_trach": "TS. Trần Văn B - Giảng viên Khoa CNTT"
+      },
+      {
+        "tieu_de": "Thực hành với Python và thư viện Pandas",
+        "mo_ta": "Hướng dẫn thực hành phân tích dữ liệu tài chính với Python",
+        "thoi_gian_bat_dau": "2025-06-30 10:45:00",
+        "thoi_gian_ket_thuc": "2025-06-30 12:00:00",
+        "nguoi_phu_trach": "ThS. Nguyễn Thị C - Data Scientist"
+      },
+      {
+        "tieu_de": "Nghỉ trưa",
+        "mo_ta": "Thời gian nghỉ trưa",
+        "thoi_gian_bat_dau": "2025-06-30 12:00:00",
+        "thoi_gian_ket_thuc": "2025-06-30 13:00:00",
+        "nguoi_phu_trach": "Ban tổ chức"
+      },
+      {
+        "tieu_de": "Xây dựng mô hình dự báo tài chính",
+        "mo_ta": "Hướng dẫn xây dựng các mô hình dự báo cho dữ liệu tài chính",
+        "thoi_gian_bat_dau": "2025-06-30 13:00:00",
+        "thoi_gian_ket_thuc": "2025-06-30 14:30:00",
+        "nguoi_phu_trach": "PGS.TS. Lê Thị D - Chuyên gia tài chính định lượng"
+      },
+      {
+        "tieu_de": "Thực hành case study",
+        "mo_ta": "Chia nhóm và giải quyết các bài toán thực tế từ ngành tài chính",
+        "thoi_gian_bat_dau": "2025-06-30 14:45:00",
+        "thoi_gian_ket_thuc": "2025-06-30 15:45:00",
+        "nguoi_phu_trach": "Ban hướng dẫn"
+      },
+      {
+        "tieu_de": "Tổng kết và trao chứng nhận",
+        "mo_ta": "Tổng kết workshop và trao chứng nhận tham dự",
+        "thoi_gian_bat_dau": "2025-06-30 15:45:00",
+        "thoi_gian_ket_thuc": "2025-06-30 16:00:00",
+        "nguoi_phu_trach": "Ban tổ chức"
+      }
+    ]
+  },
+  {
+    "su_kien_id": 4,
+    "ten_su_kien": "Cuộc thi \"Sinh viên với ý tưởng khởi nghiệp\" 2025",
+    "su_kien_poster": {
+      "url": "https://hub.edu.vn/wp-content/uploads/2025/10/cuoc-thi-y-tuong.jpg",
+      "alt": "Cuộc thi ý tưởng"
+    },
+    "mo_ta": "Cơ hội cho sinh viên thể hiện tài năng và sáng tạo trong lĩnh vực khởi nghiệp.",
+    "mo_ta_su_kien": "Cuộc thi Sinh viên với ý tưởng khởi nghiệp là sân chơi sáng tạo cho sinh viên có đam mê khởi nghiệp, tạo cơ hội để các bạn thể hiện ý tưởng đổi mới, kinh doanh tiềm năng.",
+    "chi_tiet_su_kien": "<p>Tham gia cuộc thi, sinh viên sẽ có cơ hội:</p><ul><li>Trình bày ý tưởng khởi nghiệp trước hội đồng giám khảo là các chuyên gia hàng đầu</li><li>Có cơ hội nhận đầu tư cho dự án khởi nghiệp</li><li>Nhận giải thưởng giá trị lên đến 50 triệu đồng</li><li>Tham gia các buổi đào tạo, coaching về khởi nghiệp</li></ul>",
+    "dia_diem": "CS Tôn Thất Đạm",
+    "dia_chi_cu_the": "36 Tôn Thất Đạm, Quận 1, TP.HCM",
+    "toa_do_gps": "10.772139, 106.702896",
+    "thoi_gian_bat_dau": "2025-07-05 08:00:00",
+    "thoi_gian_ket_thuc": "2025-07-05 17:00:00",
+    "thoi_gian_checkin_bat_dau": "2025-07-05 07:30:00",
+    "thoi_gian_checkin_ket_thuc": "2025-07-05 09:30:00",
+    "loai_su_kien_id": 2,
+    "hinh_thuc": "offline",
+    "don_vi_to_chuc": "CLB Khởi nghiệp HUB",
+    "don_vi_phoi_hop": "Trung tâm hỗ trợ khởi nghiệp HUB, Quỹ đầu tư SVF",
+    "doi_tuong_tham_gia": "Sinh viên đại học, cao đẳng trên địa bàn TP.HCM",
+    "ma_qr_code": "QR4STARTUP2025",
+    "tong_dang_ky": 83,
+    "tong_check_in": 76,
+    "tong_check_out": 72,
+    "cho_phep_check_in": true,
+    "cho_phep_check_out": true,
+    "yeu_cau_face_id": false,
+    "cho_phep_checkin_thu_cong": true,
+    "bat_dau_dang_ky": "2025-06-05 00:00:00",
+    "ket_thuc_dang_ky": "2025-07-03 23:59:59",
+    "han_huy_dang_ky": "2025-07-01 23:59:59",
+    "gio_bat_dau": "2025-07-05 08:00:00",
+    "gio_ket_thuc": "2025-07-05 17:00:00",
+    "so_luong_tham_gia": 200,
+    "so_luong_dien_gia": 5,
+    "gioi_han_loai_nguoi_dung": "sinh_vien",
+    "tu_khoa_su_kien": "khởi nghiệp, startup, đổi mới sáng tạo, sinh viên, ý tưởng kinh doanh",
+    "hashtag": "#StartupIdeas2025 #SVKhoiNghiep",
+    "so_luot_xem": 720,
+    "slug": "cuoc-thi-sinh-vien-voi-y-tuong-khoi-nghiep-2025",
+    "status": 1,
+    "version": 1,
+    "lich_trinh": [
+      {
+        "tieu_de": "Đón tiếp đội thi",
+        "mo_ta": "Đăng ký, xác nhận thông tin và chuẩn bị cho các đội thi",
+        "thoi_gian_bat_dau": "2025-07-05 08:00:00",
+        "thoi_gian_ket_thuc": "2025-07-05 08:30:00",
+        "nguoi_phu_trach": "Ban tổ chức"
+      },
+      {
+        "tieu_de": "Khai mạc cuộc thi",
+        "mo_ta": "Giới thiệu ban giám khảo và thể lệ cuộc thi",
+        "thoi_gian_bat_dau": "2025-07-05 08:30:00",
+        "thoi_gian_ket_thuc": "2025-07-05 09:00:00",
+        "nguoi_phu_trach": "MC và Ban tổ chức"
+      },
+      {
+        "tieu_de": "Phần thi thuyết trình (Vòng 1)",
+        "mo_ta": "Các đội thuyết trình ý tưởng khởi nghiệp (10 phút/đội)",
+        "thoi_gian_bat_dau": "2025-07-05 09:00:00",
+        "thoi_gian_ket_thuc": "2025-07-05 12:00:00",
+        "nguoi_phu_trach": "Ban giám khảo"
+      },
+      {
+        "tieu_de": "Nghỉ trưa",
+        "mo_ta": "Thời gian nghỉ trưa và networking",
+        "thoi_gian_bat_dau": "2025-07-05 12:00:00",
+        "thoi_gian_ket_thuc": "2025-07-05 13:00:00",
+        "nguoi_phu_trach": "Ban hậu cần"
+      },
+      {
+        "tieu_de": "Phần thi thuyết trình (Vòng 2)",
+        "mo_ta": "Top 5 đội xuất sắc nhất thuyết trình chi tiết (20 phút/đội)",
+        "thoi_gian_bat_dau": "2025-07-05 13:00:00",
+        "thoi_gian_ket_thuc": "2025-07-05 15:00:00",
+        "nguoi_phu_trach": "Ban giám khảo"
+      },
+      {
+        "tieu_de": "Đánh giá và tổng kết",
+        "mo_ta": "Ban giám khảo đánh giá và tổng kết cuộc thi",
+        "thoi_gian_bat_dau": "2025-07-05 15:00:00",
+        "thoi_gian_ket_thuc": "2025-07-05 16:00:00",
+        "nguoi_phu_trach": "Ban giám khảo"
+      },
+      {
+        "tieu_de": "Trao giải và bế mạc",
+        "mo_ta": "Công bố kết quả và trao giải cho các đội thắng cuộc",
+        "thoi_gian_bat_dau": "2025-07-05 16:00:00",
+        "thoi_gian_ket_thuc": "2025-07-05 17:00:00",
+        "nguoi_phu_trach": "Ban tổ chức"
+      }
+    ]
+  },
+  {
+    "su_kien_id": 5,
+    "ten_su_kien": "Hội thảo \"Xu hướng công nghệ tài chính 2025\"",
+    "su_kien_poster": {
+      "url": "https://hub.edu.vn/wp-content/uploads/2025/11/xu-huong-cong-nghe.jpg",
+      "alt": "Xu hướng công nghệ"
+    },
+    "mo_ta": "Cập nhật những xu hướng mới nhất trong lĩnh vực công nghệ tài chính và blockchain.",
+    "mo_ta_su_kien": "Hội thảo trực tuyến về các xu hướng công nghệ tài chính mới nhất, giúp người tham dự cập nhật kiến thức về blockchain, AI và các công nghệ tài chính đang thay đổi ngành.",
+    "chi_tiet_su_kien": "<p>Tham gia hội thảo, bạn sẽ được cập nhật về:</p><ul><li>Xu hướng phát triển mới nhất của công nghệ blockchain trong lĩnh vực tài chính</li><li>Ứng dụng AI và Machine Learning trong phân tích và dự báo tài chính</li><li>Công nghệ thanh toán và ngân hàng số thế hệ mới</li><li>Các mô hình kinh doanh fintech đang phát triển trên thế giới và tại Việt Nam</li></ul>",
+    "dia_diem": "CS Hoàng Diệu",
+    "dia_chi_cu_the": "56 Hoàng Diệu 2, Quận Thủ Đức, TP.HCM",
+    "toa_do_gps": "10.789456, 106.723158",
+    "thoi_gian_bat_dau": "2025-07-12 14:00:00",
+    "thoi_gian_ket_thuc": "2025-07-12 17:30:00",
+    "thoi_gian_checkin_bat_dau": "2025-07-12 13:30:00",
+    "thoi_gian_checkin_ket_thuc": "2025-07-12 15:00:00",
+    "loai_su_kien_id": 1,
+    "hinh_thuc": "online",
+    "don_vi_to_chuc": "Khoa Công nghệ Thông tin, HUB",
+    "don_vi_phoi_hop": "Hiệp hội Fintech Việt Nam, Viện Nghiên cứu Blockchain",
+    "doi_tuong_tham_gia": "Chuyên gia tài chính, công nghệ, sinh viên, giảng viên, nhà nghiên cứu",
+    "ma_qr_code": "QR5FINTECH2025",
+    "tong_dang_ky": 187,
+    "tong_check_in": 165,
+    "tong_check_out": 140,
+    "cho_phep_check_in": true,
+    "cho_phep_check_out": true,
+    "yeu_cau_face_id": false,
+    "cho_phep_checkin_thu_cong": true,
+    "bat_dau_dang_ky": "2025-06-12 00:00:00",
+    "ket_thuc_dang_ky": "2025-07-11 23:59:59",
+    "han_huy_dang_ky": "2025-07-10 23:59:59",
+    "gio_bat_dau": "2025-07-12 14:00:00",
+    "gio_ket_thuc": "2025-07-12 17:30:00",
+    "so_luong_tham_gia": 300,
+    "so_luong_dien_gia": 4,
+    "gioi_han_loai_nguoi_dung": "all",
+    "tu_khoa_su_kien": "fintech, blockchain, công nghệ tài chính, AI, ngân hàng số",
+    "hashtag": "#FintechTrends2025 #BlockchainFinance",
+    "so_luot_xem": 435,
+    "link_online": "https://meet.hub.edu.vn/xu-huong-cong-nghe-tai-chinh",
+    "mat_khau_online": "fintech2025",
+    "slug": "hoi-thao-xu-huong-cong-nghe-tai-chinh-2025",
+    "status": 1,
+    "version": 1,
+    "lich_trinh": [
+      {
+        "tieu_de": "Mở đầu và giới thiệu",
+        "mo_ta": "Khai mạc và giới thiệu chương trình hội thảo",
+        "thoi_gian_bat_dau": "2025-07-12 14:00:00",
+        "thoi_gian_ket_thuc": "2025-07-12 14:15:00",
+        "nguoi_phu_trach": "MC chương trình"
+      },
+      {
+        "tieu_de": "Blockchain và tiền điện tử trong tài chính",
+        "mo_ta": "Xu hướng ứng dụng blockchain và tiền điện tử trong lĩnh vực tài chính",
+        "thoi_gian_bat_dau": "2025-07-12 14:15:00",
+        "thoi_gian_ket_thuc": "2025-07-12 15:00:00",
+        "nguoi_phu_trach": "Chuyên gia blockchain"
+      },
+      {
+        "tieu_de": "AI trong dự báo và phân tích tài chính",
+        "mo_ta": "Ứng dụng trí tuệ nhân tạo trong phân tích và dự báo tài chính",
+        "thoi_gian_bat_dau": "2025-07-12 15:00:00",
+        "thoi_gian_ket_thuc": "2025-07-12 15:45:00",
+        "nguoi_phu_trach": "Chuyên gia AI"
+      },
+      {
+        "tieu_de": "Nghỉ giải lao",
+        "mo_ta": "Thời gian nghỉ giải lao",
+        "thoi_gian_bat_dau": "2025-07-12 15:45:00",
+        "thoi_gian_ket_thuc": "2025-07-12 16:00:00",
+        "nguoi_phu_trach": "Ban tổ chức"
+      },
+      {
+        "tieu_de": "Thanh toán không tiền mặt và ngân hàng số",
+        "mo_ta": "Xu hướng phát triển của các hình thức thanh toán không tiền mặt và ngân hàng số",
+        "thoi_gian_bat_dau": "2025-07-12 16:00:00",
+        "thoi_gian_ket_thuc": "2025-07-12 16:45:00",
+        "nguoi_phu_trach": "Chuyên gia ngân hàng số"
+      },
+      {
+        "tieu_de": "Thảo luận và hỏi đáp",
+        "mo_ta": "Phiên thảo luận và giải đáp thắc mắc từ người tham dự",
+        "thoi_gian_bat_dau": "2025-07-12 16:45:00",
+        "thoi_gian_ket_thuc": "2025-07-12 17:30:00",
+        "nguoi_phu_trach": "Panel chuyên gia"
+      }
+    ]
+  },
+  {
+    "su_kien_id": 6,
+    "ten_su_kien": "Workshop \"Kỹ năng mềm cho sinh viên tài chính ngân hàng\"",
+    "su_kien_poster": {
+      "url": "https://hub.edu.vn/wp-content/uploads/2025/10/ky-nang-mem.jpg",
+      "alt": "Kỹ năng mềm"
+    },
+    "mo_ta": "Phát triển kỹ năng giao tiếp, thuyết trình và làm việc nhóm cho sinh viên ngành tài chính ngân hàng.",
+    "mo_ta_su_kien": "Workshop cung cấp các kỹ năng mềm thiết yếu cho sinh viên tài chính ngân hàng, giúp nâng cao khả năng giao tiếp, thuyết trình và làm việc nhóm hiệu quả trong môi trường chuyên nghiệp.",
+    "chi_tiet_su_kien": "<p>Workshop kỹ năng mềm tập trung vào các chủ đề:</p><ul><li>Kỹ năng giao tiếp hiệu quả trong môi trường tài chính chuyên nghiệp</li><li>Kỹ năng thuyết trình và trình bày báo cáo tài chính</li><li>Kỹ năng làm việc nhóm và giải quyết xung đột</li><li>Kỹ năng quản lý thời gian và tổ chức công việc</li><li>Kỹ năng đàm phán và thuyết phục khách hàng</li></ul>",
+    "dia_diem": "CS Hàm Nghi",
+    "dia_chi_cu_the": "36 Hàm Nghi, Quận 1, TP.HCM",
+    "toa_do_gps": "10.771225, 106.703341",
+    "thoi_gian_bat_dau": "2025-07-18 08:30:00",
+    "thoi_gian_ket_thuc": "2025-07-18 16:00:00",
+    "thoi_gian_checkin_bat_dau": "2025-07-18 08:00:00",
+    "thoi_gian_checkin_ket_thuc": "2025-07-18 10:00:00",
+    "loai_su_kien_id": 3,
+    "hinh_thuc": "hybrid",
+    "don_vi_to_chuc": "Khoa Tài chính Ngân hàng, HUB",
+    "don_vi_phoi_hop": "Trung tâm phát triển kỹ năng, CLB Sinh viên Tài năng",
+    "doi_tuong_tham_gia": "Sinh viên khoa Tài chính Ngân hàng và các khoa liên quan",
+    "ma_qr_code": "QR6SOFTSKILLS",
+    "tong_dang_ky": 120,
+    "tong_check_in": 98,
+    "tong_check_out": 85,
+    "cho_phep_check_in": true,
+    "cho_phep_check_out": true,
+    "yeu_cau_face_id": false,
+    "cho_phep_checkin_thu_cong": true,
+    "bat_dau_dang_ky": "2025-06-18 00:00:00",
+    "ket_thuc_dang_ky": "2025-07-16 23:59:59",
+    "han_huy_dang_ky": "2025-07-15 23:59:59",
+    "gio_bat_dau": "2025-07-18 08:30:00",
+    "gio_ket_thuc": "2025-07-18 16:00:00",
+    "so_luong_tham_gia": 150,
+    "so_luong_dien_gia": 3,
+    "gioi_han_loai_nguoi_dung": "sinh_vien",
+    "tu_khoa_su_kien": "kỹ năng mềm, giao tiếp, thuyết trình, làm việc nhóm, sinh viên tài chính",
+    "hashtag": "#SoftSkills #HUBStudents",
+    "so_luot_xem": 515,
+    "link_online": "https://meet.hub.edu.vn/ky-nang-mem-sinh-vien",
+    "mat_khau_online": "skills2025",
+    "slug": "workshop-ky-nang-mem-sinh-vien-tai-chinh-ngan-hang",
+    "status": 1,
+    "version": 1,
+    "lich_trinh": [
+      {
+        "tieu_de": "Đăng ký và Check-in",
+        "mo_ta": "Đăng ký, check-in và làm quen với các thành viên",
+        "thoi_gian_bat_dau": "2025-07-18 08:30:00",
+        "thoi_gian_ket_thuc": "2025-07-18 09:00:00",
+        "nguoi_phu_trach": "Ban tổ chức"
+      },
+      {
+        "tieu_de": "Phiên 1: Kỹ năng giao tiếp chuyên nghiệp",
+        "mo_ta": "Học và thực hành kỹ năng giao tiếp trong môi trường tài chính",
+        "thoi_gian_bat_dau": "2025-07-18 09:00:00",
+        "thoi_gian_ket_thuc": "2025-07-18 10:30:00",
+        "nguoi_phu_trach": "Chuyên gia kỹ năng giao tiếp"
+      },
+      {
+        "tieu_de": "Phiên 2: Kỹ năng thuyết trình hiệu quả",
+        "mo_ta": "Học và thực hành kỹ năng thuyết trình, trình bày báo cáo tài chính",
+        "thoi_gian_bat_dau": "2025-07-18 10:45:00",
+        "thoi_gian_ket_thuc": "2025-07-18 12:00:00",
+        "nguoi_phu_trach": "Chuyên gia thuyết trình"
+      },
+      {
+        "tieu_de": "Nghỉ trưa",
+        "mo_ta": "Thời gian nghỉ trưa và networking",
+        "thoi_gian_bat_dau": "2025-07-18 12:00:00",
+        "thoi_gian_ket_thuc": "2025-07-18 13:00:00",
+        "nguoi_phu_trach": "Ban tổ chức"
+      },
+      {
+        "tieu_de": "Phiên 3: Kỹ năng làm việc nhóm",
+        "mo_ta": "Học và thực hành kỹ năng làm việc nhóm hiệu quả",
+        "thoi_gian_bat_dau": "2025-07-18 13:00:00",
+        "thoi_gian_ket_thuc": "2025-07-18 14:30:00",
+        "nguoi_phu_trach": "Chuyên gia teamwork"
+      },
+      {
+        "tieu_de": "Phiên 4: Thực hành tình huống",
+        "mo_ta": "Thực hành giải quyết các tình huống thực tế trong công việc",
+        "thoi_gian_bat_dau": "2025-07-18 14:45:00",
+        "thoi_gian_ket_thuc": "2025-07-18 15:45:00",
+        "nguoi_phu_trach": "Các chuyên gia và Ban tổ chức"
+      },
+      {
+        "tieu_de": "Tổng kết và Trao chứng nhận",
+        "mo_ta": "Tổng kết workshop và trao chứng nhận tham dự",
+        "thoi_gian_bat_dau": "2025-07-18 15:45:00",
+        "thoi_gian_ket_thuc": "2025-07-18 16:00:00",
+        "nguoi_phu_trach": "Ban tổ chức"
+      }
+    ]
+  },
+  {
+    "su_kien_id": 7,
+    "ten_su_kien": "Chuỗi hội thảo \"Định hướng nghề nghiệp ngành Kinh tế số\"",
+    "su_kien_poster": {
+      "url": "https://hub.edu.vn/wp-content/uploads/2025/09/dinh-huong-nghe-nghiep.jpg",
+      "alt": "Định hướng nghề nghiệp"
+    },
+    "mo_ta": "Chuỗi hội thảo giúp sinh viên định hướng nghề nghiệp trong lĩnh vực kinh tế số đang phát triển mạnh mẽ.",
+    "mo_ta_su_kien": "Chuỗi hội thảo định hướng nghề nghiệp giúp sinh viên khám phá và chuẩn bị cho các cơ hội nghề nghiệp trong lĩnh vực kinh tế số, nơi công nghệ và tài chính giao thoa tạo nên các vị trí việc làm mới và đầy tiềm năng.",
+    "chi_tiet_su_kien": "<p>Tham gia chuỗi hội thảo, bạn sẽ được:</p><ul><li>Tìm hiểu về xu hướng nghề nghiệp trong lĩnh vực kinh tế số</li><li>Gặp gỡ và lắng nghe chia sẻ từ các chuyên gia đầu ngành</li><li>Khám phá các vị trí việc làm tiềm năng và yêu cầu kỹ năng</li><li>Nhận tư vấn về lộ trình phát triển nghề nghiệp phù hợp</li><li>Kết nối với các nhà tuyển dụng và cơ hội thực tập</li></ul>",
+    "dia_diem": "CS Tôn Thất Đạm",
+    "dia_chi_cu_the": "36 Tôn Thất Đạm, Quận 1, TP.HCM",
+    "toa_do_gps": "10.772139, 106.702896",
+    "thoi_gian_bat_dau": "2025-07-25 09:00:00",
+    "thoi_gian_ket_thuc": "2025-07-25 11:30:00",
+    "thoi_gian_checkin_bat_dau": "2025-07-25 08:30:00",
+    "thoi_gian_checkin_ket_thuc": "2025-07-25 10:00:00",
+    "loai_su_kien_id": 1,
+    "hinh_thuc": "offline",
+    "don_vi_to_chuc": "Khoa Kinh tế, HUB",
+    "don_vi_phoi_hop": "Phòng Quan hệ Doanh nghiệp, Câu lạc bộ Sinh viên Kinh tế",
+    "doi_tuong_tham_gia": "Sinh viên khoa Kinh tế và các khoa liên quan",
+    "ma_qr_code": "QR7CAREER2025",
+    "tong_dang_ky": 95,
+    "tong_check_in": 85,
+    "tong_check_out": 80,
+    "cho_phep_check_in": true,
+    "cho_phep_check_out": true,
+    "yeu_cau_face_id": false,
+    "cho_phep_checkin_thu_cong": true,
+    "bat_dau_dang_ky": "2025-07-01 00:00:00",
+    "ket_thuc_dang_ky": "2025-07-24 23:59:59",
+    "han_huy_dang_ky": "2025-07-22 23:59:59",
+    "gio_bat_dau": "2025-07-25 09:00:00",
+    "gio_ket_thuc": "2025-07-25 11:30:00",
+    "so_luong_tham_gia": 120,
+    "so_luong_dien_gia": 3,
+    "gioi_han_loai_nguoi_dung": "sinh_vien",
+    "tu_khoa_su_kien": "định hướng nghề nghiệp, kinh tế số, digital economy, career, việc làm",
+    "hashtag": "#CareerOrientation #DigitalEconomy",
+    "so_luot_xem": 320,
+    "slug": "chuoi-hoi-thao-dinh-huong-nghe-nghiep-kinh-te-so",
+    "status": 1,
+    "version": 1,
+    "lich_trinh": [
+      {
+        "tieu_de": "Đón tiếp và check-in",
+        "mo_ta": "Đón tiếp sinh viên, phát tài liệu và check-in",
+        "thoi_gian_bat_dau": "2025-07-25 09:00:00",
+        "thoi_gian_ket_thuc": "2025-07-25 09:15:00",
+        "nguoi_phu_trach": "Ban tổ chức"
+      },
+      {
+        "tieu_de": "Giới thiệu về ngành Kinh tế số",
+        "mo_ta": "Tổng quan về ngành Kinh tế số và xu hướng phát triển",
+        "thoi_gian_bat_dau": "2025-07-25 09:15:00",
+        "thoi_gian_ket_thuc": "2025-07-25 09:45:00",
+        "nguoi_phu_trach": "PGS.TS. Nguyễn Văn X - Trưởng khoa Kinh tế"
+      },
+      {
+        "tieu_de": "Cơ hội nghề nghiệp trong lĩnh vực Kinh tế số",
+        "mo_ta": "Giới thiệu các vị trí việc làm tiềm năng và yêu cầu kỹ năng",
+        "thoi_gian_bat_dau": "2025-07-25 09:45:00",
+        "thoi_gian_ket_thuc": "2025-07-25 10:30:00",
+        "nguoi_phu_trach": "Chuyên gia tuyển dụng"
+      },
+      {
+        "tieu_de": "Chia sẻ kinh nghiệm từ cựu sinh viên",
+        "mo_ta": "Chia sẻ kinh nghiệm từ cựu sinh viên đang làm việc trong lĩnh vực Kinh tế số",
+        "thoi_gian_bat_dau": "2025-07-25 10:30:00",
+        "thoi_gian_ket_thuc": "2025-07-25 11:00:00",
+        "nguoi_phu_trach": "Panel cựu sinh viên"
+      },
+      {
+        "tieu_de": "Hỏi đáp và kết nối",
+        "mo_ta": "Phiên hỏi đáp và kết nối với các chuyên gia, nhà tuyển dụng",
+        "thoi_gian_bat_dau": "2025-07-25 11:00:00",
+        "thoi_gian_ket_thuc": "2025-07-25 11:30:00",
+        "nguoi_phu_trach": "Ban tổ chức và Diễn giả"
+      }
+    ]
+  },
+  {
+    "su_kien_id": 8,
+    "ten_su_kien": "Talkshow \"Chia sẻ kinh nghiệm làm việc tại Big4\"",
+    "su_kien_poster": {
+      "url": "https://hub.edu.vn/wp-content/uploads/2025/08/big4-talkshow.jpg",
+      "alt": "Talkshow Big4"
+    },
+    "mo_ta": "Gặp gỡ và lắng nghe chia sẻ từ các cựu sinh viên HUB đang làm việc tại các công ty Big4.",
+    "mo_ta_su_kien": "Talkshow đặc biệt với sự tham gia của các cựu sinh viên HUB đang làm việc tại Big4 (Deloitte, EY, KPMG, PwC), chia sẻ kinh nghiệm thực tế và bí quyết thành công trong ngành kiểm toán và tư vấn.",
+    "chi_tiet_su_kien": "<p>Tham gia talkshow, bạn sẽ được:</p><ul><li>Lắng nghe chia sẻ từ các cựu sinh viên đang làm việc tại Big4</li><li>Tìm hiểu về môi trường làm việc tại các công ty hàng đầu</li><li>Học hỏi bí quyết ứng tuyển và phát triển sự nghiệp</li><li>Hiểu rõ hơn về các vị trí việc làm và cơ hội thăng tiến</li><li>Cơ hội đặt câu hỏi trực tiếp và kết nối với diễn giả</li></ul>",
+    "dia_diem": "CS Hoàng Diệu",
+    "dia_chi_cu_the": "56 Hoàng Diệu 2, Quận Thủ Đức, TP.HCM",
+    "toa_do_gps": "10.789456, 106.723158",
+    "thoi_gian_bat_dau": "2025-08-02 14:00:00",
+    "thoi_gian_ket_thuc": "2025-08-02 16:30:00",
+    "thoi_gian_checkin_bat_dau": "2025-08-02 13:30:00",
+    "thoi_gian_checkin_ket_thuc": "2025-08-02 14:30:00",
+    "loai_su_kien_id": 4,
+    "hinh_thuc": "offline",
+    "don_vi_to_chuc": "CLB Kế toán Kiểm toán HUB",
+    "don_vi_phoi_hop": "Hội Cựu sinh viên HUB, Phòng Công tác Sinh viên",
+    "doi_tuong_tham_gia": "Sinh viên chuyên ngành kế toán, kiểm toán, tài chính, quản trị",
+    "ma_qr_code": "QR8BIG4TALK",
+    "tong_dang_ky": 76,
+    "tong_check_in": 68,
+    "tong_check_out": 65,
+    "cho_phep_check_in": true,
+    "cho_phep_check_out": true,
+    "yeu_cau_face_id": false,
+    "cho_phep_checkin_thu_cong": true,
+    "bat_dau_dang_ky": "2025-07-15 00:00:00",
+    "ket_thuc_dang_ky": "2025-08-01 23:59:59",
+    "han_huy_dang_ky": "2025-07-30 23:59:59",
+    "gio_bat_dau": "2025-08-02 14:00:00",
+    "gio_ket_thuc": "2025-08-02 16:30:00",
+    "so_luong_tham_gia": 100,
+    "so_luong_dien_gia": 4,
+    "gioi_han_loai_nguoi_dung": "sinh_vien",
+    "tu_khoa_su_kien": "Big4, kiểm toán, tư vấn, kế toán, cựu sinh viên, chia sẻ kinh nghiệm",
+    "hashtag": "#HUBAlumni #Big4Experience",
+    "so_luot_xem": 385,
+    "slug": "talkshow-chia-se-kinh-nghiem-lam-viec-tai-big4",
+    "status": 1,
+    "version": 1,
+    "lich_trinh": [
+      {
+        "tieu_de": "Đón tiếp và check-in",
+        "mo_ta": "Đón tiếp sinh viên và khách mời",
+        "thoi_gian_bat_dau": "2025-08-02 14:00:00",
+        "thoi_gian_ket_thuc": "2025-08-02 14:15:00",
+        "nguoi_phu_trach": "Ban tổ chức"
+      },
+      {
+        "tieu_de": "Giới thiệu về chương trình và diễn giả",
+        "mo_ta": "Giới thiệu về chương trình và các diễn giả là cựu sinh viên đang làm việc tại Big4",
+        "thoi_gian_bat_dau": "2025-08-02 14:15:00",
+        "thoi_gian_ket_thuc": "2025-08-02 14:30:00",
+        "nguoi_phu_trach": "MC chương trình"
+      },
+      {
+        "tieu_de": "Phần 1: Chia sẻ từ cựu sinh viên tại Deloitte và EY",
+        "mo_ta": "Chia sẻ kinh nghiệm làm việc tại Deloitte và EY từ các cựu sinh viên",
+        "thoi_gian_bat_dau": "2025-08-02 14:30:00",
+        "thoi_gian_ket_thuc": "2025-08-02 15:15:00",
+        "nguoi_phu_trach": "Cựu sinh viên Big4"
+      },
+      {
+        "tieu_de": "Phần 2: Chia sẻ từ cựu sinh viên tại KPMG và PwC",
+        "mo_ta": "Chia sẻ kinh nghiệm làm việc tại KPMG và PwC từ các cựu sinh viên",
+        "thoi_gian_bat_dau": "2025-08-02 15:15:00",
+        "thoi_gian_ket_thuc": "2025-08-02 16:00:00",
+        "nguoi_phu_trach": "Cựu sinh viên Big4"
+      },
+      {
+        "tieu_de": "Hỏi đáp và networking",
+        "mo_ta": "Sinh viên đặt câu hỏi và giao lưu với các diễn giả",
+        "thoi_gian_bat_dau": "2025-08-02 16:00:00",
+        "thoi_gian_ket_thuc": "2025-08-02 16:30:00",
+        "nguoi_phu_trach": "Tất cả diễn giả và MC"
+      }
+    ]
+  }
+]

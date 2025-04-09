@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - HUB Template</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/event-detail.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo/HUB-logo.png" alt="HUB Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="su-kien.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="navbar-auth">
+                    <a href="dang-nhap.html" class="btn btn-login">Login</a>
+                    <a href="dang-ky.html" class="btn btn-register">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb-container bg-light py-2">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="su-kien.html">Events</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Workshop on Web Development</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="event-detail-container">
+        <div class="container py-5">
+            <div class="row">
+                <!-- Left Column - Event Details -->
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <div class="card event-detail-card">
+                        <!-- Event Header -->
+                        <div class="event-header">
+                            <h1 id="eventTitle">Workshop on Web Development</h1>
+                            <span id="eventTag" class="event-detail-tag bg-workshop">WORKSHOP</span>
+                        </div>
+                        
+                        <!-- Event Image -->
+                        <div class="event-image-container">
+                            <img id="eventImage" src="https://hub.edu.vn/wp-content/uploads/2023/12/event-default.jpg" alt="Workshop on Web Development" class="img-fluid">
+                        </div>
+                        
+                        <!-- Event Description -->
+                        <div class="event-content">
+                            <h3 class="section-title mb-4">Event Description</h3>
+                            <div id="eventDescription" class="event-description">
+                                <p>Join us for an immersive workshop on web development, where you'll learn the fundamentals of building modern, responsive websites from industry experts.</p>
+                                
+                                <p>This comprehensive workshop will cover HTML, CSS, JavaScript, and introduce you to popular frameworks like Bootstrap and React. Whether you're a complete beginner or looking to enhance your existing skills, this workshop is designed to provide valuable insights and hands-on experience.</p>
+                                
+                                <h4>What You'll Learn:</h4>
+                                <ul>
+                                    <li>HTML5 structure and semantic elements</li>
+                                    <li>CSS3 styling, flexbox, and grid layouts</li>
+                                    <li>JavaScript fundamentals and DOM manipulation</li>
+                                    <li>Responsive design principles</li>
+                                    <li>Introduction to Bootstrap framework</li>
+                                    <li>Basic React components and state management</li>
+                                </ul>
+                                
+                                <h4>Who Should Attend:</h4>
+                                <ul>
+                                    <li>Students interested in web development</li>
+                                    <li>Professionals looking to add web skills to their portfolio</li>
+                                    <li>Designers wanting to implement their designs</li>
+                                    <li>Anyone curious about how websites are built</li>
+                                </ul>
+                                
+                                <p>All participants will receive materials, resources, and certificate of completion. Bring your laptop and get ready to code!</p>
+                            </div>
+                            
+                            <!-- Event Schedule -->
+                            <h3 class="section-title mt-5 mb-4">Event Schedule</h3>
+                            <div id="eventSchedule" class="event-schedule">
+                                <div class="schedule-item">
+                                    <div class="schedule-number">1</div>
+                                    <div class="schedule-content">
+                                        <h4>Introduction to Web Development</h4>
+                                        <p>Overview of web technologies and development environment setup</p>
+                                        <div class="schedule-time">
+                                            <i class="far fa-clock"></i>
+                                            <span>10:00 AM - 11:00 AM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="schedule-item">
+                                    <div class="schedule-number">2</div>
+                                    <div class="schedule-content">
+                                        <h4>HTML & CSS Fundamentals</h4>
+                                        <p>Creating structure and styling for web pages</p>
+                                        <div class="schedule-time">
+                                            <i class="far fa-clock"></i>
+                                            <span>11:15 AM - 12:30 PM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="schedule-item">
+                                    <div class="schedule-number">3</div>
+                                    <div class="schedule-content">
+                                        <h4>Lunch Break</h4>
+                                        <p>Networking and refreshments</p>
+                                        <div class="schedule-time">
+                                            <i class="far fa-clock"></i>
+                                            <span>12:30 PM - 1:30 PM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="schedule-item">
+                                    <div class="schedule-number">4</div>
+                                    <div class="schedule-content">
+                                        <h4>JavaScript Basics</h4>
+                                        <p>Adding interactivity to your website</p>
+                                        <div class="schedule-time">
+                                            <i class="far fa-clock"></i>
+                                            <span>1:30 PM - 3:00 PM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="schedule-item">
+                                    <div class="schedule-number">5</div>
+                                    <div class="schedule-content">
+                                        <h4>Final Project & Deployment</h4>
+                                        <p>Building and launching your first website</p>
+                                        <div class="schedule-time">
+                                            <i class="far fa-clock"></i>
+                                            <span>3:15 PM - 5:00 PM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Event Location -->
+                            <h3 class="section-title mt-5 mb-4">Event Location</h3>
+                            <div class="event-location">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4 mb-md-0">
+                                        <div class="location-info">
+                                            <p><i class="fas fa-map-marker-alt me-2"></i> <strong>Venue:</strong> <span id="eventLocation">Online via Zoom</span></p>
+                                            <p><i class="fas fa-directions me-2"></i> <strong>Address:</strong> <span>Link will be sent to registered participants</span></p>
+                                            <p><i class="fas fa-phone-alt me-2"></i> <strong>Contact:</strong> <span>(123) 456-7890</span></p>
+                                            <p><i class="fas fa-envelope me-2"></i> <strong>Email:</strong> <span>events@hubtemplate.com</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div id="eventMap" class="event-map">
+                                            <img src="https://via.placeholder.com/600x300?text=Online+Event+via+Zoom" alt="Event Location" class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Share Section -->
+                            <h3 class="section-title mt-5 mb-4">Share This Event</h3>
+                            <div class="event-share">
+                                <p>Invite your friends and colleagues to this event!</p>
+                                <div class="share-buttons">
+                                    <a href="#" class="btn-share btn-facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                                    <a href="#" class="btn-share btn-twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                                    <a href="#" class="btn-share btn-linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                                    <a href="#" class="btn-share btn-email"><i class="fas fa-envelope"></i> Email</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column - Sidebar -->
+                <div class="col-lg-4">
+                    <div class="event-sidebar sticky-top" style="top: 20px;">
+                        <!-- Event Details Card -->
+                        <div class="card mb-4 sidebar-card">
+                            <div class="card-body">
+                                <h4 class="sidebar-title">Event Details</h4>
+                                
+                                <div class="sidebar-info">
+                                    <div class="sidebar-info-item">
+                                        <div class="sidebar-info-icon">
+                                            <i class="far fa-calendar-alt"></i>
+                                        </div>
+                                        <div class="sidebar-info-content">
+                                            <div class="sidebar-info-label">Date</div>
+                                            <div class="sidebar-info-value" data-key="date">June 15, 2023</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="sidebar-info-item">
+                                        <div class="sidebar-info-icon">
+                                            <i class="far fa-clock"></i>
+                                        </div>
+                                        <div class="sidebar-info-content">
+                                            <div class="sidebar-info-label">Time</div>
+                                            <div class="sidebar-info-value" data-key="time">10:00 AM - 5:00 PM</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="sidebar-info-item">
+                                        <div class="sidebar-info-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="sidebar-info-content">
+                                            <div class="sidebar-info-label">Location</div>
+                                            <div class="sidebar-info-value" data-key="location">Online via Zoom</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="sidebar-info-item">
+                                        <div class="sidebar-info-icon">
+                                            <i class="fas fa-wifi"></i>
+                                        </div>
+                                        <div class="sidebar-info-content">
+                                            <div class="sidebar-info-label">Format</div>
+                                            <div class="sidebar-info-value" data-key="format">Online</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="sidebar-info-item">
+                                        <div class="sidebar-info-icon">
+                                            <i class="fas fa-user-tie"></i>
+                                        </div>
+                                        <div class="sidebar-info-content">
+                                            <div class="sidebar-info-label">Organizer</div>
+                                            <div class="sidebar-info-value" data-key="organizer">HUB Template</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Registration Card -->
+                        <div class="card mb-4 sidebar-card">
+                            <div class="card-body">
+                                <h4 class="sidebar-title">Registration</h4>
+                                
+                                <div class="sidebar-registration">
+                                    <div class="sidebar-capacity">
+                                        <div class="capacity-label">Registration Capacity</div>
+                                        <div class="capacity-value">100 participants</div>
+                                    </div>
+                                    
+                                    <div class="sidebar-progress mt-3">
+                                        <div class="progress-text">
+                                            <span>45/100 registered</span>
+                                            <span>45%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="sidebar-deadline mt-3">
+                                        <div class="deadline-label">Registration Deadline</div>
+                                        <div class="deadline-value">June 14, 2023 11:59 PM</div>
+                                    </div>
+                                    
+                                    <button id="registrationBtn" class="btn btn-primary btn-registration mt-4 w-100">
+                                        Register Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Countdown Timer -->
+                        <div class="card mb-4 sidebar-card">
+                            <div class="card-body">
+                                <h4 class="sidebar-title">Event Countdown</h4>
+                                
+                                <div id="eventCountdown" class="event-countdown">
+                                    <h4 class="timer-heading">Time Remaining</h4>
+                                    <div class="timer-units">
+                                        <div class="timer-unit">
+                                            <div class="timer-value" id="countdown-days">10</div>
+                                            <div class="timer-label">Days</div>
+                                        </div>
+                                        <div class="timer-unit">
+                                            <div class="timer-value" id="countdown-hours">08</div>
+                                            <div class="timer-label">Hours</div>
+                                        </div>
+                                        <div class="timer-unit">
+                                            <div class="timer-value" id="countdown-minutes">45</div>
+                                            <div class="timer-label">Minutes</div>
+                                        </div>
+                                        <div class="timer-unit">
+                                            <div class="timer-value" id="countdown-seconds">20</div>
+                                            <div class="timer-label">Seconds</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo/HUB-logo-white.png" alt="HUB Logo">
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="su-kien.html">Events</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 HUB Template. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simple countdown timer
+            function updateCountdown() {
+                const now = new Date();
+                const eventDate = new Date('2023-06-15T10:00:00');
+                const diff = eventDate - now;
+                
+                if (diff <= 0) {
+                    document.getElementById('eventCountdown').innerHTML = `
+                        <h4 class="timer-heading">Event has started</h4>
+                    `;
+                    return;
+                }
+                
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                
+                document.getElementById('countdown-days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('countdown-hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('countdown-minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('countdown-seconds').textContent = seconds.toString().padStart(2, '0');
+            }
+            
+            // Update countdown every second
+            setInterval(updateCountdown, 1000);
+            
+            // Registration button
+            const registrationBtn = document.getElementById('registrationBtn');
+            if (registrationBtn) {
+                registrationBtn.addEventListener('click', function() {
+                    alert('Thank you for your interest! Registration form would open here.');
+                });
+            }
+            
+            // Share buttons
+            const shareButtons = document.querySelectorAll('.share-buttons a');
+            shareButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const url = encodeURIComponent(window.location.href);
+                    const title = encodeURIComponent('Workshop on Web Development - HUB Template');
+                    
+                    let shareUrl = '';
+                    if (button.classList.contains('btn-facebook')) {
+                        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                    } else if (button.classList.contains('btn-twitter')) {
+                        shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+                    } else if (button.classList.contains('btn-linkedin')) {
+                        shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+                    } else if (button.classList.contains('btn-email')) {
+                        shareUrl = `mailto:?subject=${title}&body=Check out this event: ${url}`;
+                        window.location.href = shareUrl;
+                        return;
+                    }
+                    
+                    window.open(shareUrl, '_blank', 'width=600,height=400');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
