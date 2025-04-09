@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Đăng ký sự kiện - Hệ thống quản lý sự kiện ĐH Ngân hàng TP.HCM">
+    <meta name="keywords" content="đăng ký sự kiện, sự kiện sinh viên, ĐH Ngân hàng">
+    <meta name="author" content="ĐH Ngân hàng TP.HCM">
+    
+    <!-- Title -->
+    <title>Đăng ký sự kiện - Hệ thống quản lý sự kiện ĐH Ngân hàng TP.HCM</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon-32x32.png" type="image/png" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap-extended.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Core CSS -->
+    <link href="../assets/css/app.css" rel="stylesheet">
+    <link href="../assets/css/icons.css" rel="stylesheet">
+    
+    <!-- Components CSS -->
+    <link rel="stylesheet" href="../assets/css/nguoidung/components/sidebar.css">
+    <link rel="stylesheet" href="../assets/css/nguoidung/components/header.css">
+    
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../assets/css/nguoidung/dang-ky-su-kien.css">
+</head>
+
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- Toast Container -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+    
+    <!-- Layout Wrapper -->
+    <div class="layout-wrapper">
+        <!-- Sidebar Backdrop -->
+        <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+        
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <a href="trang-chu.html" class="sidebar-logo">
+                    <img src="../assets/images/hub-logo.png" alt="Logo ĐH Ngân hàng">
+                </a>
+                <button class="sidebar-close" id="sidebar-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="sidebar-content">
+                <nav class="sidebar-nav">
+                    <ul class="sidebar-menu">
+                        <li class="menu-item">
+                            <a href="trang-chu.html" class="menu-link">
+                                <i class="fas fa-home"></i>
+                                <span>Trang chủ</span>
+                            </a>
+                        </li>
+                        <li class="menu-item active">
+                            <a href="dang-ky-su-kien.html" class="menu-link">
+                                <i class="fas fa-calendar-plus"></i>
+                                <span>Đăng ký sự kiện</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="su-kien-cua-toi.html" class="menu-link">
+                                <i class="fas fa-calendar-check"></i>
+                                <span>Sự kiện của tôi</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="lich-su.html" class="menu-link">
+                                <i class="fas fa-history"></i>
+                                <span>Lịch sử</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <button class="header-toggle" id="sidebar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                
+                <div class="header-right">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown">
+                            <img src="../assets/images/avatars/avatar-1.png" alt="Avatar" class="avatar">
+                            <span class="user-name">Nguyễn Văn A</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                            <li>
+                                <a class="dropdown-item" href="ho-so.html">
+                                    <i class="fas fa-user"></i> Hồ sơ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="doi-mat-khau.html">
+                                    <i class="fas fa-key"></i> Đổi mật khẩu
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="../dang-nhap.html">
+                                    <i class="fas fa-sign-out-alt"></i> Đăng xuất
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Page Content -->
+            <div class="container-fluid">
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="trang-chu.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Đăng ký sự kiện</li>
+                    </ol>
+                </nav>
+                
+                <!-- Page Title -->
+                <div class="page-title">
+                    <h1>Đăng ký sự kiện</h1>
+                    <p>Khám phá và đăng ký tham gia các sự kiện đang diễn ra</p>
+                </div>
+                
+                <!-- Event Filters -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <form class="row g-3">
+                            <div class="col-md-4">
+                                <label class="form-label">Tìm kiếm</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Nhập từ khóa...">
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Loại sự kiện</label>
+                                <select class="form-select">
+                                    <option value="">Tất cả</option>
+                                    <option value="hoi-thao">Hội thảo</option>
+                                    <option value="dao-tao">Đào tạo</option>
+                                    <option value="cuoc-thi">Cuộc thi</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Thời gian</label>
+                                <select class="form-select">
+                                    <option value="">Tất cả</option>
+                                    <option value="today">Hôm nay</option>
+                                    <option value="tomorrow">Ngày mai</option>
+                                    <option value="week">Tuần này</option>
+                                    <option value="month">Tháng này</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label class="form-label">Sắp xếp</label>
+                                <select class="form-select">
+                                    <option value="newest">Mới nhất</option>
+                                    <option value="oldest">Cũ nhất</option>
+                                    <option value="name">Tên A-Z</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Events List -->
+                <div class="row">
+                    <!-- Event Card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card event-card">
+                            <img src="../assets/images/events/event-1.jpg" class="card-img-top" alt="Sự kiện 1">
+                            <div class="card-body">
+                                <div class="event-date">
+                                    <span class="day">15</span>
+                                    <span class="month">Th5</span>
+                                </div>
+                                <h5 class="card-title">Hội thảo: Kỹ năng phỏng vấn xin việc</h5>
+                                <p class="card-text">Workshop chia sẻ kinh nghiệm và kỹ năng cần thiết cho buổi phỏng vấn xin việc thành công.</p>
+                                <div class="event-info">
+                                    <div class="info-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>14:00 - 17:00</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Hội trường A</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>50/100 người</span>
+                                    </div>
+                                </div>
+                                <div class="event-actions">
+                                    <a href="chi-tiet-su-kien.html" class="btn btn-outline-primary">
+                                        <i class="fas fa-info-circle"></i> Chi tiết
+                                    </a>
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-calendar-plus"></i> Đăng ký
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Event Card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card event-card">
+                            <img src="../assets/images/events/event-2.jpg" class="card-img-top" alt="Sự kiện 2">
+                            <div class="card-body">
+                                <div class="event-date">
+                                    <span class="day">20</span>
+                                    <span class="month">Th5</span>
+                                </div>
+                                <h5 class="card-title">Cuộc thi: Ý tưởng khởi nghiệp 2024</h5>
+                                <p class="card-text">Sân chơi cho các bạn sinh viên thể hiện ý tưởng khởi nghiệp sáng tạo của mình.</p>
+                                <div class="event-info">
+                                    <div class="info-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>08:00 - 17:00</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Hội trường B</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>30/50 người</span>
+                                    </div>
+                                </div>
+                                <div class="event-actions">
+                                    <a href="chi-tiet-su-kien.html" class="btn btn-outline-primary">
+                                        <i class="fas fa-info-circle"></i> Chi tiết
+                                    </a>
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-calendar-plus"></i> Đăng ký
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Event Card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card event-card">
+                            <img src="../assets/images/events/event-3.jpg" class="card-img-top" alt="Sự kiện 3">
+                            <div class="card-body">
+                                <div class="event-date">
+                                    <span class="day">25</span>
+                                    <span class="month">Th5</span>
+                                </div>
+                                <h5 class="card-title">Đào tạo: Kỹ năng thuyết trình</h5>
+                                <p class="card-text">Khóa học giúp bạn tự tin thuyết trình trước đám đông và trình bày ý tưởng hiệu quả.</p>
+                                <div class="event-info">
+                                    <div class="info-item">
+                                        <i class="fas fa-clock"></i>
+                                        <span>13:30 - 16:30</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Phòng 201</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>25/40 người</span>
+                                    </div>
+                                </div>
+                                <div class="event-actions">
+                                    <a href="chi-tiet-su-kien.html" class="btn btn-outline-primary">
+                                        <i class="fas fa-info-circle"></i> Chi tiết
+                                    </a>
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-calendar-plus"></i> Đăng ký
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pagination -->
+                <nav class="mt-4">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="mb-0">© 2024 Trường Đại học Ngân hàng TP.HCM. All rights reserved.</p>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <p class="mb-0">
+                                <a href="#">Điều khoản sử dụng</a> | 
+                                <a href="#">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    <!-- Core JS -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+    
+    <!-- Page JS -->
+    <script src="../assets/js/nguoidung/dang-ky-su-kien.js"></script>
+</body>
+</html> 

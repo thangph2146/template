@@ -1,331 +1,748 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Details - HUB Template</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="Chi tiết sự kiện: Hội thảo khoa học Tài chính và Ngân hàng trong kỷ nguyên số">
+    <meta name="keywords" content="đại học ngân hàng, sự kiện hub, hội thảo, tài chính ngân hàng, kỷ nguyên số">
+    <meta name="author" content="Trường Đại học Ngân hàng TP.HCM">
+    <meta property="og:title" content="Chi tiết sự kiện: Hội thảo khoa học Tài chính và Ngân hàng trong kỷ nguyên số">
+    <meta property="og:description" content="Hội thảo tập trung vào những thách thức và cơ hội của ngành tài chính ngân hàng trong thời đại số.">
+    <meta property="og:image" content="https://hub.edu.vn/wp-content/uploads/2023/12/hoi-thao-khoa-hoc.jpg">
+    <meta property="og:url" content="https://hub.edu.vn">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <title>Chi tiết sự kiện</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/logo/favicon.ico" type="image/x-icon">
+    
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/event-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="chi-tiet-su-kien/style.css">
 </head>
+
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
+    <!-- Navbar -->
+    <header class="main-header">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/logo/HUB-logo.png" alt="HUB Logo">
+            <a class="navbar-brand" href="trang-chu.html" aria-label="Trang chủ Đại học Ngân hàng TP.HCM">
+                <img src="http://127.0.0.1:5500/template/assets/logo/HUB-logo-white.png" alt="HUB Logo" height="40">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="http://127.0.0.1:5500/template/trang-chu.html">
+                            <i class="fas fa-home me-1"></i> Trang chủ
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="su-kien.html">Events</a>
+                        <a class="nav-link active" href="http://127.0.0.1:5500/template/su-kien.html" aria-current="page">
+                            <i class="fas fa-calendar-alt me-1"></i> Sự kiện
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="eventTypeDropdownLink" aria-expanded="false" aria-haspopup="true">
+                            <i class="fas fa-filter me-1"></i> Loại sự kiện
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventTypeDropdownLink">
+                            <li><a class="dropdown-item filter-btn" data-filter="all" href="http://127.0.0.1:5500/template/su-kien.html">Tất cả</a></li>
+                            <li><a class="dropdown-item filter-btn" data-filter="1" href="http://127.0.0.1:5500/template/su-kien.html?type=1">Hội thảo</a></li>
+                            <li><a class="dropdown-item filter-btn" data-filter="2" href="http://127.0.0.1:5500/template/su-kien.html?type=2">Hội nghị</a></li>
+                            <li><a class="dropdown-item filter-btn" data-filter="3" href="http://127.0.0.1:5500/template/su-kien.html?type=3">Workshop</a></li>
+                            <li><a class="dropdown-item filter-btn" data-filter="4" href="http://127.0.0.1:5500/template/su-kien.html?type=4">Khác</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <i class="fas fa-calendar-alt me-1"></i>Dashboard
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/template/nguoi-dung/dang-ky-su-kien.html">Đăng ký sự kiện</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/template/nguoi-dung/lich-su-dang-ky.html">Lịch sử đăng ký</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/template/nguoi-dung/thong-tin-ca-nhan.html">Thông tin cá nhân</a></li>
+                        </ul>
                     </li>
                 </ul>
-                <div class="navbar-auth">
-                    <a href="dang-nhap.html" class="btn btn-login">Login</a>
-                    <a href="dang-ky.html" class="btn btn-register">Register</a>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="https://hub.edu.vn" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm px-3">
+                        <i class="fas fa-external-link-alt me-1"></i> HUB
+                    </a>
+                    <a href="http://127.0.0.1:5500/template/dang-nhap.html" class="btn btn-light btn-sm px-3 me-2 btn-login">
+                        <i class="fas fa-user-plus me-1"></i> Đăng nhập
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
+    </header>
 
-    <!-- BREADCRUMB -->
-    <div class="breadcrumb-container bg-light py-2">
+    <!-- Event Header -->
+    <div class="event-header">
+        <div class="container">
+            <h1 class="event-title">Đang tải thông tin sự kiện...</h1>
+            <div class="event-meta">
+                <div class="event-meta-item">
+                    <i class="fas fa-eye"></i> 0 lượt xem
+                </div>
+                <div class="event-meta-item">
+                    <i class="fas fa-users"></i> 0 người đăng ký
+                </div>
+                <div class="event-meta-item">
+                    <i class="far fa-calendar-alt"></i> --/--/----
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-container">
         <div class="container">
             <nav aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="su-kien.html">Events</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Workshop on Web Development</li>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="http://127.0.0.1:5500/template/trang-chu.html">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a href="http://127.0.0.1:5500/template/su-kien.html">Danh sách sự kiện</a></li>
+                    <li class="breadcrumb-item active">Đang tải...</li>
                 </ol>
             </nav>
         </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <main class="event-detail-container">
-        <div class="container py-5">
+    <!-- Main Content -->
+    <main class="event-content">
+        <div class="container">
             <div class="row">
-                <!-- Left Column - Event Details -->
-                <div class="col-lg-8 mb-4 mb-lg-0">
-                    <div class="card event-detail-card">
-                        <!-- Event Header -->
-                        <div class="event-header">
-                            <h1 id="eventTitle">Workshop on Web Development</h1>
-                            <span id="eventTag" class="event-detail-tag bg-workshop">WORKSHOP</span>
-                        </div>
-                        
-                        <!-- Event Image -->
-                        <div class="event-image-container">
-                            <img id="eventImage" src="https://hub.edu.vn/wp-content/uploads/2023/12/event-default.jpg" alt="Workshop on Web Development" class="img-fluid">
-                        </div>
-                        
-                        <!-- Event Description -->
-                        <div class="event-content">
-                            <h3 class="section-title mb-4">Event Description</h3>
-                            <div id="eventDescription" class="event-description">
-                                <p>Join us for an immersive workshop on web development, where you'll learn the fundamentals of building modern, responsive websites from industry experts.</p>
+                <!-- Left Content -->
+                <div class="col-lg-8">
+                    <!-- Tabs -->
+                    <div class="event-tabs">
+                        <ul class="nav nav-tabs" id="eventTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="detail-tab" data-bs-toggle="tab" href="#detail" role="tab" aria-controls="detail" aria-selected="true">
+                                    <i class="fas fa-info-circle"></i> Chi tiết sự kiện
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="attendees-tab" data-bs-toggle="tab" href="#attendees" role="tab" aria-controls="attendees" aria-selected="false">
+                                    <i class="fas fa-users"></i> Tình trạng đăng ký
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="register-tab" data-bs-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">
+                                    <i class="fas fa-user-plus"></i> Form đăng ký
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="eventTabsContent">
+                            <!-- Detail Tab -->
+                            <div class="tab-pane fade show active" id="detail" role="tabpanel" aria-labelledby="detail-tab">
+                                <div class="event-info-card">
+                                    <h3 class="section-title">Thông tin sự kiện</h3>
+
+                                    <!-- Event Details Grid -->
+                                    <div class="event-details-grid">
+                                        <div class="event-detail-item">
+                                            <div class="event-detail-icon">
+                                                <i class="far fa-calendar-alt"></i>
+                                            </div>
+                                            <div class="event-detail-content">
+                                                <h4>Ngày tổ chức</h4>
+                                                <p>--/--/----</p>
+                                            </div>
+                                        </div>
+                                        <div class="event-detail-item">
+                                            <div class="event-detail-icon">
+                                                <i class="far fa-clock"></i>
+                                            </div>
+                                            <div class="event-detail-content">
+                                                <h4>Thời gian</h4>
+                                                <p>--:-- - --:--</p>
+                                            </div>
+                                        </div>
+                                        <div class="event-detail-item">
+                                            <div class="event-detail-icon">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                                            <div class="event-detail-content">
+                                                <h4>Địa điểm</h4>
+                                                <p>Đang tải...</p>
+                                                <p class="venue-detail">Đang tải...</p>
+                                            </div>
+                                        </div>
+                                        <div class="event-detail-item">
+                                            <div class="event-detail-icon">
+                                                <i class="fas fa-users"></i>
+                                            </div>
+                                            <div class="event-detail-content">
+                                                <h4>Số lượng</h4>
+                                                <p>0 người</p>
+                                            </div>
+                                        </div>
+                                        <div class="event-detail-item">
+                                            <div class="event-detail-icon">
+                                                <i class="fas fa-tv"></i>
+                                            </div>
+                                            <div class="event-detail-content">
+                                                <h4>Hình thức</h4>
+                                                <p>Đang tải...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Time Countdown -->
+                                <div class="time-countdown">
+                                    <h3 class="section-title">Thời gian</h3>
+                                    <div class="countdown-container">
+                                        <div class="countdown-item">
+                                            <div class="countdown-value" id="countdown-days">0</div>
+                                            <div class="countdown-label">Ngày</div>
+                                        </div>
+                                        <div class="countdown-item">
+                                            <div class="countdown-value" id="countdown-hours">0</div>
+                                            <div class="countdown-label">Giờ</div>
+                                        </div>
+                                        <div class="countdown-item">
+                                            <div class="countdown-value" id="countdown-minutes">0</div>
+                                            <div class="countdown-label">Phút</div>
+                                        </div>
+                                        <div class="countdown-item">
+                                            <div class="countdown-value" id="countdown-seconds">0</div>
+                                            <div class="countdown-label">Giây</div>
+                                        </div>
+                                    </div>
+                                </div>
                                 
-                                <p>This comprehensive workshop will cover HTML, CSS, JavaScript, and introduce you to popular frameworks like Bootstrap and React. Whether you're a complete beginner or looking to enhance your existing skills, this workshop is designed to provide valuable insights and hands-on experience.</p>
-                                
-                                <h4>What You'll Learn:</h4>
-                                <ul>
-                                    <li>HTML5 structure and semantic elements</li>
-                                    <li>CSS3 styling, flexbox, and grid layouts</li>
-                                    <li>JavaScript fundamentals and DOM manipulation</li>
-                                    <li>Responsive design principles</li>
-                                    <li>Introduction to Bootstrap framework</li>
-                                    <li>Basic React components and state management</li>
-                                </ul>
-                                
-                                <h4>Who Should Attend:</h4>
-                                <ul>
-                                    <li>Students interested in web development</li>
-                                    <li>Professionals looking to add web skills to their portfolio</li>
-                                    <li>Designers wanting to implement their designs</li>
-                                    <li>Anyone curious about how websites are built</li>
-                                </ul>
-                                
-                                <p>All participants will receive materials, resources, and certificate of completion. Bring your laptop and get ready to code!</p>
+                                <!-- Introduction -->
+                                <div class="event-intro">
+                                    <h3 class="section-title">Giới thiệu</h3>
+                                    <p>Đang tải thông tin sự kiện...</p>
+                                </div>
+
+                                <!-- Objectives -->
+                                <div class="event-objectives">
+                                    <h3 class="section-title">Mục tiêu</h3>
+                                    <ul class="objectives-list">
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Trao đổi về những thành tựu và cơ hội của ngành tài chính ngân hàng trong thời đại công nghệ số</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Chia sẻ kinh nghiệm và giải pháp ứng dụng công nghệ trong hoạt động ngân hàng</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Định hướng phát triển nguồn nhân lực ngành tài chính - ngân hàng trong tương lai</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Tăng cường hợp tác giữa viện trường và doanh nghiệp</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Main Topics -->
+                                <div class="event-topics">
+                                    <h3 class="section-title">Chủ đề chính</h3>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="topic-item">
+                                                <i class="fas fa-lightbulb"></i>
+                                                <span>Xu hướng phát triển của ngân hàng số</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="topic-item">
+                                                <i class="fas fa-lightbulb"></i>
+                                                <span>Ứng dụng blockchain trong lĩnh vực tài chính</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="topic-item">
+                                                <i class="fas fa-lightbulb"></i>
+                                                <span>Bảo mật và quyền lợi cá nhân trong ngân hàng số</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="topic-item">
+                                                <i class="fas fa-lightbulb"></i>
+                                                <span>Đào tạo nguồn nhân lực cho ngành ngân hàng số</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Schedule -->
+                                <div class="event-schedule">
+                                    <h3 class="section-title">Lịch trình sự kiện</h3>
+                                    <div class="schedule-list">
+                                        <div class="schedule-item">
+                                            <div class="schedule-number">1</div>
+                                            <div class="schedule-content">
+                                                <h4>Đang tải lịch trình...</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Speakers -->
+                                <div class="event-speakers">
+                                    <h3 class="section-title">Diễn giả</h3>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="speaker-card">
+                                                <div class="speaker-header">
+                                                    <div class="speaker-number">Diễn giả 1</div>
+                                                </div>
+                                                <div class="speaker-info">
+                                                    <h4 class="speaker-name">TS. Nguyễn Đình Thọ</h4>
+                                                    <p class="speaker-title">Hiệu trưởng, Trường ĐH Ngân hàng TPHCM</p>
+                                                    <div class="speaker-social">
+                                                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                                        <a href="#" class="social-icon"><i class="far fa-envelope"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="speaker-card">
+                                                <div class="speaker-header">
+                                                    <div class="speaker-number">Diễn giả 2</div>
+                                                </div>
+                                                <div class="speaker-info">
+                                                    <h4 class="speaker-name">PGS.TS. Phạm Thị Hoàng Anh</h4>
+                                                    <p class="speaker-title">Trưởng Khoa Ngân hàng</p>
+                                                    <div class="speaker-social">
+                                                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                                        <a href="#" class="social-icon"><i class="far fa-envelope"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="speaker-card">
+                                                <div class="speaker-header">
+                                                    <div class="speaker-number">Diễn giả 3</div>
+                                                </div>
+                                                <div class="speaker-info">
+                                                    <h4 class="speaker-name">TS. Nguyễn Minh Hà</h4>
+                                                    <p class="speaker-title">Trưởng Khoa Tài chính</p>
+                                                    <div class="speaker-social">
+                                                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                                        <a href="#" class="social-icon"><i class="far fa-envelope"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="speaker-card">
+                                                <div class="speaker-header">
+                                                    <div class="speaker-number">Diễn giả 4</div>
+                                                </div>
+                                                <div class="speaker-info">
+                                                    <h4 class="speaker-name">PGS.TS. Lê Thanh Tâm</h4>
+                                                    <p class="speaker-title">Trưởng Khoa Kinh tế</p>
+                                                    <div class="speaker-social">
+                                                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                                        <a href="#" class="social-icon"><i class="far fa-envelope"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Share Event -->
+                                <div class="event-share">
+                                    <h3 class="section-title">Chia sẻ sự kiện</h3>
+                                    <p>Hãy chia sẻ sự kiện này đến bạn bè và đồng nghiệp của bạn:</p>
+                                    <div class="share-buttons">
+                                        <a href="#" class="btn btn-facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                                        <a href="#" class="btn btn-twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                                        <a href="#" class="btn btn-linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                                        <a href="#" class="btn btn-email"><i class="far fa-envelope"></i> Email</a>
+                                    </div>
+                                </div>
                             </div>
-                            
-                            <!-- Event Schedule -->
-                            <h3 class="section-title mt-5 mb-4">Event Schedule</h3>
-                            <div id="eventSchedule" class="event-schedule">
-                                <div class="schedule-item">
-                                    <div class="schedule-number">1</div>
-                                    <div class="schedule-content">
-                                        <h4>Introduction to Web Development</h4>
-                                        <p>Overview of web technologies and development environment setup</p>
-                                        <div class="schedule-time">
-                                            <i class="far fa-clock"></i>
-                                            <span>10:00 AM - 11:00 AM</span>
-                                        </div>
+
+                            <!-- Attendees Tab -->
+                            <div class="tab-pane fade" id="attendees" role="tabpanel" aria-labelledby="attendees-tab">
+                                <div class="attendees-status">
+                                    <h3>Danh sách người đăng ký</h3>
+                                    <div class="alert alert-info">
+                                        <i class="fas fa-info-circle me-2"></i>
+                                        Hiện chưa có người đăng ký cho sự kiện này.
                                     </div>
-                                </div>
-                                
-                                <div class="schedule-item">
-                                    <div class="schedule-number">2</div>
-                                    <div class="schedule-content">
-                                        <h4>HTML & CSS Fundamentals</h4>
-                                        <p>Creating structure and styling for web pages</p>
-                                        <div class="schedule-time">
-                                            <i class="far fa-clock"></i>
-                                            <span>11:15 AM - 12:30 PM</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="schedule-item">
-                                    <div class="schedule-number">3</div>
-                                    <div class="schedule-content">
-                                        <h4>Lunch Break</h4>
-                                        <p>Networking and refreshments</p>
-                                        <div class="schedule-time">
-                                            <i class="far fa-clock"></i>
-                                            <span>12:30 PM - 1:30 PM</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="schedule-item">
-                                    <div class="schedule-number">4</div>
-                                    <div class="schedule-content">
-                                        <h4>JavaScript Basics</h4>
-                                        <p>Adding interactivity to your website</p>
-                                        <div class="schedule-time">
-                                            <i class="far fa-clock"></i>
-                                            <span>1:30 PM - 3:00 PM</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="schedule-item">
-                                    <div class="schedule-number">5</div>
-                                    <div class="schedule-content">
-                                        <h4>Final Project & Deployment</h4>
-                                        <p>Building and launching your first website</p>
-                                        <div class="schedule-time">
-                                            <i class="far fa-clock"></i>
-                                            <span>3:15 PM - 5:00 PM</span>
-                                        </div>
+                                    <div class="text-center mt-4">
+                                        <button class="btn btn-primary register-now-btn" onclick="scrollToRegisterTab()">
+                                            <i class="fas fa-user-plus me-2"></i>
+                                            Đăng ký ngay
+                                        </button>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <!-- Event Location -->
-                            <h3 class="section-title mt-5 mb-4">Event Location</h3>
-                            <div class="event-location">
-                                <div class="row">
-                                    <div class="col-md-6 mb-4 mb-md-0">
-                                        <div class="location-info">
-                                            <p><i class="fas fa-map-marker-alt me-2"></i> <strong>Venue:</strong> <span id="eventLocation">Online via Zoom</span></p>
-                                            <p><i class="fas fa-directions me-2"></i> <strong>Address:</strong> <span>Link will be sent to registered participants</span></p>
-                                            <p><i class="fas fa-phone-alt me-2"></i> <strong>Contact:</strong> <span>(123) 456-7890</span></p>
-                                            <p><i class="fas fa-envelope me-2"></i> <strong>Email:</strong> <span>events@hubtemplate.com</span></p>
+
+                            <!-- Register Tab -->
+                            <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                                <div class="registration-form">
+                                    <h3>Đăng ký tham gia</h3>
+                                    <p class="text-muted mb-4">Vui lòng điền đầy đủ thông tin bên dưới để đăng ký tham gia sự kiện.</p>
+                                    <form id="event-registration-form">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="fullname" class="form-label">Họ và tên <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="fullname" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                                <input type="email" class="form-control" id="email" required>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div id="eventMap" class="event-map">
-                                            <img src="https://via.placeholder.com/600x300?text=Online+Event+via+Zoom" alt="Event Location" class="img-fluid rounded">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="phone" class="form-label">Số điện thoại <span class="text-danger">*</span></label>
+                                                <input type="tel" class="form-control" id="phone" required>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="organization" class="form-label">Đơn vị/Tổ chức</label>
+                                                <input type="text" class="form-control" id="organization">
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Share Section -->
-                            <h3 class="section-title mt-5 mb-4">Share This Event</h3>
-                            <div class="event-share">
-                                <p>Invite your friends and colleagues to this event!</p>
-                                <div class="share-buttons">
-                                    <a href="#" class="btn-share btn-facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
-                                    <a href="#" class="btn-share btn-twitter"><i class="fab fa-twitter"></i> Twitter</a>
-                                    <a href="#" class="btn-share btn-linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-                                    <a href="#" class="btn-share btn-email"><i class="fas fa-envelope"></i> Email</a>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="participant-type" class="form-label">Bạn là <span class="text-danger">*</span></label>
+                                                <select class="form-select" id="participant-type" required>
+                                                    <option value="">-- Chọn loại người tham gia --</option>
+                                                    <option value="khach">Khách mời</option>
+                                                    <option value="sinh_vien">Sinh viên</option>
+                                                    <option value="giang_vien">Giảng viên</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="reference-source" class="form-label">Bạn biết sự kiện này từ đâu?</label>
+                                                <select class="form-select" id="reference-source">
+                                                    <option value="">-- Chọn nguồn thông tin --</option>
+                                                    <option value="Facebook">Facebook</option>
+                                                    <option value="Website HUB">Website HUB</option>
+                                                    <option value="Email">Email</option>
+                                                    <option value="Bạn bè">Bạn bè</option>
+                                                    <option value="Đồng nghiệp">Đồng nghiệp</option>
+                                                    <option value="Khác">Khác</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Trường thông tin bổ sung cho sinh viên -->
+                                        <div id="student-fields" style="display: none;">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="student-id" class="form-label">Mã số sinh viên <span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control" id="student-id" placeholder="Nhập mã số sinh viên">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="major" class="form-label">Ngành học</label>
+                                                    <input type="text" class="form-control" id="major" placeholder="Nhập ngành học của bạn">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="year" class="form-label">Năm học</label>
+                                                    <select class="form-select" id="year">
+                                                        <option value="">-- Chọn năm học --</option>
+                                                        <option value="1">Năm thứ 1</option>
+                                                        <option value="2">Năm thứ 2</option>
+                                                        <option value="3">Năm thứ 3</option>
+                                                        <option value="4">Năm thứ 4</option>
+                                                        <option value="5">Trên năm thứ 4</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="university" class="form-label">Trường đại học</label>
+                                                    <input type="text" class="form-control" id="university" placeholder="Nhập tên trường" value="Trường Đại học Ngân hàng TP.HCM">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Trường thông tin bổ sung cho giảng viên -->
+                                        <div id="faculty-fields" style="display: none;">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="faculty" class="form-label">Khoa/Bộ môn <span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control" id="faculty" placeholder="Nhập khoa hoặc bộ môn của bạn">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="presentation" class="form-label">Bạn có muốn tham gia trình bày không?</label>
+                                                    <select class="form-select" id="presentation">
+                                                        <option value="false">Không</option>
+                                                        <option value="true">Có</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Trường thông tin bổ sung cho khách mời -->
+                                        <div id="guest-fields" style="display: none;">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="job-title" class="form-label">Chức vụ</label>
+                                                    <input type="text" class="form-control" id="job-title" placeholder="Nhập chức vụ của bạn">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="company-position" class="form-label">Vị trí công ty</label>
+                                                    <input type="text" class="form-control" id="company-position" placeholder="Nhập vị trí của bạn tại công ty">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="interests" class="form-label">Lĩnh vực quan tâm</label>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" name="interests[]" id="interest-fintech" value="Fintech">
+                                                            <label class="form-check-label" for="interest-fintech">Fintech</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" name="interests[]" id="interest-blockchain" value="Blockchain">
+                                                            <label class="form-check-label" for="interest-blockchain">Blockchain</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" name="interests[]" id="interest-bigdata" value="Big Data">
+                                                            <label class="form-check-label" for="interest-bigdata">Big Data</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" name="interests[]" id="interest-ai" value="AI">
+                                                            <label class="form-check-label" for="interest-ai">AI</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" name="interests[]" id="interest-banking" value="Banking">
+                                                            <label class="form-check-label" for="interest-banking">Ngân hàng</label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" name="interests[]" id="interest-other" value="Other">
+                                                            <label class="form-check-label" for="interest-other">Khác</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label class="form-label">Hình thức tham gia <span class="text-danger">*</span></label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="participation-type" id="participation-offline" value="offline" checked required>
+                                                <label class="form-check-label" for="participation-offline">
+                                                    Trực tiếp (Offline)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="participation-type" id="participation-online" value="online" required>
+                                                <label class="form-check-label" for="participation-online">
+                                                    Trực tuyến (Online)
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="participation-type" id="participation-hybrid" value="hybrid" required>
+                                                <label class="form-check-label" for="participation-hybrid">
+                                                    Kết hợp (Hybrid)
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div id="online-fields" style="display: none;">
+                                            <div class="mb-3">
+                                                <label for="online-platform" class="form-label">Nền tảng trực tuyến <span class="text-danger">*</span></label>
+                                                <select class="form-select" id="online-platform">
+                                                    <option value="zoom">Zoom</option>
+                                                    <option value="google-meet">Google Meet</option>
+                                                    <option value="microsoft-teams">Microsoft Teams</option>
+                                                    <option value="webex">Cisco Webex</option>
+                                                    <option value="skype">Skype</option>
+                                                    <option value="other">Khác</option>
+                                                </select>
+                                                <div class="form-text">Thông tin đăng nhập sẽ được gửi đến email của bạn sau khi đăng ký.</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="preferred-language" class="form-label">Ngôn ngữ ưa thích</label>
+                                                <select class="form-select" id="preferred-language">
+                                                    <option value="vi">Tiếng Việt</option>
+                                                    <option value="en">Tiếng Anh</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="participation-reason" class="form-label">Lý do bạn muốn tham gia sự kiện này? <span class="text-danger">*</span></label>
+                                            <textarea class="form-control" id="participation-reason" rows="2" placeholder="Chia sẻ lý do bạn quan tâm đến sự kiện này" required></textarea>
+                                            <div class="form-text">Thông tin này giúp Ban Tổ chức hiểu rõ hơn về nhu cầu của bạn</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="note" class="form-label">Ghi chú/Góp ý</label>
+                                            <textarea class="form-control" id="note" rows="3" placeholder="Nhập ghi chú hoặc góp ý cho ban tổ chức (nếu có)"></textarea>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Thiết bị bạn sẽ sử dụng</label>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="platforms[]" id="platform-ios" value="iOS">
+                                                        <label class="form-check-label" for="platform-ios">iPhone/iPad (iOS)</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="platforms[]" id="platform-android" value="Android">
+                                                        <label class="form-check-label" for="platform-android">Android</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="platforms[]" id="platform-windows" value="Windows">
+                                                        <label class="form-check-label" for="platform-windows">Windows</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="platforms[]" id="platform-macos" value="macOS">
+                                                        <label class="form-check-label" for="platform-macos">Mac (macOS)</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="platforms[]" id="platform-linux" value="Linux">
+                                                        <label class="form-check-label" for="platform-linux">Linux</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="platforms[]" id="platform-other" value="Other">
+                                                        <label class="form-check-label" for="platform-other">Khác</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Tùy chọn liên hệ</label>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" id="newsletter-subscribe" name="contact_options[]" value="newsletter" checked>
+                                                <label class="form-check-label" for="newsletter-subscribe">
+                                                    Tôi muốn nhận thông báo về các sự kiện tương tự trong tương lai
+                                                </label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="checkbox" id="materials-subscribe" name="contact_options[]" value="materials" checked>
+                                                <label class="form-check-label" for="materials-subscribe">
+                                                    Tôi muốn nhận tài liệu liên quan đến sự kiện
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-check mb-4">
+                                            <input class="form-check-input" type="checkbox" id="agree-terms" required>
+                                            <label class="form-check-label" for="agree-terms">
+                                                Tôi đồng ý với <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">điều khoản tham gia</a> sự kiện
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">
+                                            <i class="fas fa-paper-plane me-2"></i>
+                                            Đăng ký
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Right Column - Sidebar -->
+
+                <!-- Right Sidebar -->
                 <div class="col-lg-4">
-                    <div class="event-sidebar sticky-top" style="top: 20px;">
-                        <!-- Event Details Card -->
-                        <div class="card mb-4 sidebar-card">
-                            <div class="card-body">
-                                <h4 class="sidebar-title">Event Details</h4>
-                                
-                                <div class="sidebar-info">
-                                    <div class="sidebar-info-item">
-                                        <div class="sidebar-info-icon">
-                                            <i class="far fa-calendar-alt"></i>
-                                        </div>
-                                        <div class="sidebar-info-content">
-                                            <div class="sidebar-info-label">Date</div>
-                                            <div class="sidebar-info-value" data-key="date">June 15, 2023</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="sidebar-info-item">
-                                        <div class="sidebar-info-icon">
-                                            <i class="far fa-clock"></i>
-                                        </div>
-                                        <div class="sidebar-info-content">
-                                            <div class="sidebar-info-label">Time</div>
-                                            <div class="sidebar-info-value" data-key="time">10:00 AM - 5:00 PM</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="sidebar-info-item">
-                                        <div class="sidebar-info-icon">
-                                            <i class="fas fa-map-marker-alt"></i>
-                                        </div>
-                                        <div class="sidebar-info-content">
-                                            <div class="sidebar-info-label">Location</div>
-                                            <div class="sidebar-info-value" data-key="location">Online via Zoom</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="sidebar-info-item">
-                                        <div class="sidebar-info-icon">
-                                            <i class="fas fa-wifi"></i>
-                                        </div>
-                                        <div class="sidebar-info-content">
-                                            <div class="sidebar-info-label">Format</div>
-                                            <div class="sidebar-info-value" data-key="format">Online</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="sidebar-info-item">
-                                        <div class="sidebar-info-icon">
-                                            <i class="fas fa-user-tie"></i>
-                                        </div>
-                                        <div class="sidebar-info-content">
-                                            <div class="sidebar-info-label">Organizer</div>
-                                            <div class="sidebar-info-value" data-key="organizer">HUB Template</div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <!-- QR Code Share -->
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-title">Chia sẻ sự kiện</h3>
+                        <div class="qr-code-container">
+                            <p>Quét mã QR để xem thêm chi tiết:</p>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://hub.edu.vn/su-kien/chi-tiet-su-kien.html" 
+                                 alt="QR Code" class="qr-code-img">
+                            <a href="#" class="btn btn-download">
+                                <i class="fas fa-download"></i> Tải mã QR
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Event Stats -->
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-title">Thống kê sự kiện</h3>
+                        <div class="event-stats">
+                            <div class="stat-item">
+                                <i class="far fa-eye"></i>
+                                <span>Lượt xem</span>
+                                <span class="stat-value">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-users"></i>
+                                <span>Người đăng ký</span>
+                                <span class="stat-value">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-user-check"></i>
+                                <span>Đã tham gia</span>
+                                <span class="stat-value">0</span>
                             </div>
                         </div>
-                        
-                        <!-- Registration Card -->
-                        <div class="card mb-4 sidebar-card">
-                            <div class="card-body">
-                                <h4 class="sidebar-title">Registration</h4>
-                                
-                                <div class="sidebar-registration">
-                                    <div class="sidebar-capacity">
-                                        <div class="capacity-label">Registration Capacity</div>
-                                        <div class="capacity-value">100 participants</div>
-                                    </div>
-                                    
-                                    <div class="sidebar-progress mt-3">
-                                        <div class="progress-text">
-                                            <span>45/100 registered</span>
-                                            <span>45%</span>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="sidebar-deadline mt-3">
-                                        <div class="deadline-label">Registration Deadline</div>
-                                        <div class="deadline-value">June 14, 2023 11:59 PM</div>
-                                    </div>
-                                    
-                                    <button id="registrationBtn" class="btn btn-primary btn-registration mt-4 w-100">
-                                        Register Now
-                                    </button>
-                                </div>
+                    </div>
+
+                    <!-- Organizer -->
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-title">Đơn vị tổ chức</h3>
+                        <div class="organizer-info">
+                            <div class="organizer-logo">
+                                <img src="assets/logo/HUB-logo.png" alt="HUB Logo">
                             </div>
+                            <h4>Trường Đại học Ngân hàng TP.HCM</h4>
+                            <ul class="organizer-details">
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>36 Tôn Thất Đạm, Quận 1, TP.HCM</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>(028) 38 212 593</span>
+                                </li>
+                                <li>
+                                    <i class="far fa-envelope"></i>
+                                    <span>info@hub.edu.vn</span>
+                                </li>
+                            </ul>
                         </div>
-                        
-                        <!-- Countdown Timer -->
-                        <div class="card mb-4 sidebar-card">
-                            <div class="card-body">
-                                <h4 class="sidebar-title">Event Countdown</h4>
-                                
-                                <div id="eventCountdown" class="event-countdown">
-                                    <h4 class="timer-heading">Time Remaining</h4>
-                                    <div class="timer-units">
-                                        <div class="timer-unit">
-                                            <div class="timer-value" id="countdown-days">10</div>
-                                            <div class="timer-label">Days</div>
-                                        </div>
-                                        <div class="timer-unit">
-                                            <div class="timer-value" id="countdown-hours">08</div>
-                                            <div class="timer-label">Hours</div>
-                                        </div>
-                                        <div class="timer-unit">
-                                            <div class="timer-value" id="countdown-minutes">45</div>
-                                            <div class="timer-label">Minutes</div>
-                                        </div>
-                                        <div class="timer-unit">
-                                            <div class="timer-value" id="countdown-seconds">20</div>
-                                            <div class="timer-label">Seconds</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+
+                    <!-- Related Events -->
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-title">Sự kiện liên quan</h3>
+                        <div class="related-events">
+                            <p>Đang tải sự kiện liên quan...</p>
                         </div>
                     </div>
                 </div>
@@ -333,97 +750,90 @@
         </div>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
+    <!-- Footer -->
+    <footer class="main-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="assets/logo/HUB-logo-white.png" alt="HUB Logo">
-                </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="su-kien.html">Events</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h4 class="footer-title">Về chúng tôi</h4>
+                        <p>Trường Đại học Ngân hàng TP.HCM là một trong những cơ sở giáo dục đại học hàng đầu trong lĩnh vực tài chính - ngân hàng tại Việt Nam.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="footer-title">Liên kết</h4>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Trang chủ</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Sự kiện</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Giới thiệu</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="footer-title">Liên hệ</h4>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-map-marker-alt"></i> 36 Tôn Thất Đạm, Q.1, TP.HCM</li>
+                            <li><i class="fas fa-phone-alt"></i> (028) 38 212 593</li>
+                            <li><i class="far fa-envelope"></i> info@hub.edu.vn</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="footer-title">Bản đồ</h4>
+                        <div class="footer-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6219257597554!2d106.70230851744384!3d10.765753899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4949dbf177%3A0x77c434e30fb9ce86!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBOZ8OibiBIw6BuZyBUUC5IQ00!5e0!3m2!1svi!2s!4v1647942508574!5m2!1svi!2s" 
+                                    width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 HUB Template. All rights reserved.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 Trường Đại học Ngân hàng TP.HCM</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Thiết kế bởi Ban Truyền thông HUB</p>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Simple countdown timer
-            function updateCountdown() {
-                const now = new Date();
-                const eventDate = new Date('2023-06-15T10:00:00');
-                const diff = eventDate - now;
-                
-                if (diff <= 0) {
-                    document.getElementById('eventCountdown').innerHTML = `
-                        <h4 class="timer-heading">Event has started</h4>
-                    `;
-                    return;
-                }
-                
-                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-                
-                document.getElementById('countdown-days').textContent = days.toString().padStart(2, '0');
-                document.getElementById('countdown-hours').textContent = hours.toString().padStart(2, '0');
-                document.getElementById('countdown-minutes').textContent = minutes.toString().padStart(2, '0');
-                document.getElementById('countdown-seconds').textContent = seconds.toString().padStart(2, '0');
-            }
-            
-            // Update countdown every second
-            setInterval(updateCountdown, 1000);
-            
-            // Registration button
-            const registrationBtn = document.getElementById('registrationBtn');
-            if (registrationBtn) {
-                registrationBtn.addEventListener('click', function() {
-                    alert('Thank you for your interest! Registration form would open here.');
-                });
-            }
-            
-            // Share buttons
-            const shareButtons = document.querySelectorAll('.share-buttons a');
-            shareButtons.forEach(button => {
-                button.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const url = encodeURIComponent(window.location.href);
-                    const title = encodeURIComponent('Workshop on Web Development - HUB Template');
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="chi-tiet-su-kien/script.js"></script>
+
+    <!-- Terms Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="termsModalLabel">Điều khoản tham gia sự kiện</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>1. Đăng ký tham gia</h6>
+                    <p>Khi đăng ký tham gia sự kiện, bạn cam kết rằng thông tin cung cấp là chính xác và đầy đủ.</p>
                     
-                    let shareUrl = '';
-                    if (button.classList.contains('btn-facebook')) {
-                        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
-                    } else if (button.classList.contains('btn-twitter')) {
-                        shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
-                    } else if (button.classList.contains('btn-linkedin')) {
-                        shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
-                    } else if (button.classList.contains('btn-email')) {
-                        shareUrl = `mailto:?subject=${title}&body=Check out this event: ${url}`;
-                        window.location.href = shareUrl;
-                        return;
-                    }
+                    <h6>2. Xác nhận đăng ký</h6>
+                    <p>Sau khi đăng ký, bạn sẽ nhận được email xác nhận. Đăng ký của bạn chỉ có hiệu lực sau khi được ban tổ chức xác nhận.</p>
                     
-                    window.open(shareUrl, '_blank', 'width=600,height=400');
-                });
-            });
-        });
-    </script>
+                    <h6>3. Thay đổi hoặc hủy đăng ký</h6>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

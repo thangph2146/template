@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,7 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="robots" content="index, follow">
-    <title>Events - HUB Template</title>
+    <title>Danh Sách Sự Kiện - Đại Học Ngân Hàng TP.HCM</title>
     
     <!-- Favicon -->
     <link rel="shortcut icon" href="template/assets/logo/favicon.ico" type="image/x-icon">
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- LineIcons CSS -->
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
@@ -32,12 +32,10 @@
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/su-kien.css">
+    <link rel="stylesheet" href="su-kien/style.css">
 </head>
 
 <body>
@@ -47,32 +45,56 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/logo/HUB-logo.png" alt="HUB Logo">
+            <a class="navbar-brand" href="trang-chu.html" aria-label="Trang chủ Đại học Ngân hàng TP.HCM">
+                <img src="https://hub.edu.vn/wp-content/uploads/2023/09/HUB-logo-white.png" alt="HUB Logo" height="40">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="http://127.0.0.1:5500/template/trang-chu.html">
+                            <i class="fas fa-home me-1"></i> Trang chủ
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="su-kien.html">Events</a>
+                        <a class="nav-link active" href="http://127.0.0.1:5500/template/su-kien.html" aria-current="page">
+                            <i class="fas fa-calendar-alt me-1"></i> Sự kiện
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="eventTypeDropdownLink" aria-expanded="false" aria-haspopup="true">
+                            <i class="fas fa-filter me-1"></i> Loại sự kiện
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventTypeDropdownLink">
+                            <li><a class="dropdown-item filter-btn" data-filter="all" href="http://127.0.0.1:5500/template/su-kien.html">Tất cả</a></li>
+                            <li><a class="dropdown-item filter-btn" data-filter="1" href="http://127.0.0.1:5500/template/su-kien.html?type=1">Hội thảo</a></li>
+                            <li><a class="dropdown-item filter-btn" data-filter="2" href="http://127.0.0.1:5500/template/su-kien.html?type=2">Hội nghị</a></li>
+                            <li><a class="dropdown-item filter-btn" data-filter="3" href="http://127.0.0.1:5500/template/su-kien.html?type=3">Workshop</a></li>
+                            <li><a class="dropdown-item filter-btn" data-filter="4" href="http://127.0.0.1:5500/template/su-kien.html?type=4">Khác</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <i class="fas fa-calendar-alt me-1"></i>Dashboard
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="nguoi-dung/dang-ky-su-kien.html">Đăng ký sự kiện</a></li>
+                            <li><a class="dropdown-item" href="nguoi-dung/lich-su-dang-ky.html">Lịch sử đăng ký</a></li>
+                            <li><a class="dropdown-item" href="nguoi-dung/thong-tin-ca-nhan.html">Thông tin cá nhân</a></li>
+                        </ul>
                     </li>
                 </ul>
-                <div class="navbar-auth">
-                    <a href="dang-nhap.html" class="btn btn-login">Login</a>
-                    <a href="dang-ky.html" class="btn btn-register">Register</a>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="https://hub.edu.vn" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm px-3">
+                        <i class="fas fa-external-link-alt me-1"></i> HUB
+                    </a>
+                    <a href="http://127.0.0.1:5500/template/dang-nhap.html" class="btn btn-light btn-sm px-3 me-2 btn-login">
+                        <i class="fas fa-user-plus me-1"></i> Đăng nhập
+                    </a>
                 </div>
             </div>
         </div>
@@ -87,8 +109,8 @@
                     <div class="col-12">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Events</li>
+                                <li class="breadcrumb-item"><a href="http://127.0.0.1:5500/template/trang-chu.html">Trang chủ</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Danh sách sự kiện</li>
                             </ol>
                         </nav>
                     </div>
@@ -97,48 +119,52 @@
         </div>
 
         <!-- Page Header -->
-        <section class="page-header">
+        <section class="page-header" data-aos="fade-down">
             <div class="container">
-                <h1 class="page-title">Browse Events</h1>
-                <p class="page-description">Discover the latest events, workshops, seminars, and conferences happening around the campus.</p>
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="page-title">Danh Sách Sự Kiện</h1>
+                        <p class="page-description">Khám phá tất cả các sự kiện sắp diễn ra tại Đại học Ngân hàng TP.HCM</p>
+                        <div class="event-action-buttons">
+                            <a href="#" class="btn btn-sm btn-primary" id="btnThisWeek">
+                                <i class="fas fa-calendar-week me-1"></i> Xem sự kiện tuần này
+                            </a>
+                            <a href="#" class="btn btn-sm btn-outline-primary ms-2" id="btnViewAll">
+                                <i class="fas fa-list me-1"></i> Tất cả sự kiện
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Event Search and Filter -->
-        <section class="event-search-section">
+        <section class="event-search-section" data-aos="fade-up" data-aos-delay="100">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 mb-3 mb-lg-0">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="eventSearchInput" placeholder="Search events by name, location, or keywords...">
+                    <div class="col-md-8">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm sự kiện..." id="eventSearchInput" aria-label="Tìm kiếm sự kiện">
                             <button class="btn btn-primary" type="button" id="searchButton">
-                                <i class="fas fa-search me-2"></i> Search
+                                <i class="fas fa-search"></i>
+                                Tìm kiếm
                             </button>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="d-flex gap-2">
-                            <div class="dropdown flex-grow-1">
-                                <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="eventTypeDropdown" data-bs-toggle="dropdown">
-                                    <i class="fas fa-tag me-2"></i> Type
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-outline-primary me-2" id="btnAllEvents">
+                                <i class="fas fa-globe-asia me-1"></i> Tất cả
+                            </button>
+                            <div class="dropdown">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="eventFormatDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-filter me-1"></i> Hình thức
                                 </button>
-                                <ul class="dropdown-menu w-100">
-                                    <li><a class="dropdown-item filter-btn active" href="#" data-filter="all">All Types</a></li>
-                                    <li><a class="dropdown-item filter-btn" href="#" data-filter="1">Workshops</a></li>
-                                    <li><a class="dropdown-item filter-btn" href="#" data-filter="2">Seminars</a></li>
-                                    <li><a class="dropdown-item filter-btn" href="#" data-filter="3">Conferences</a></li>
-                                    <li><a class="dropdown-item filter-btn" href="#" data-filter="4">Other Events</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropdown flex-grow-1">
-                                <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="eventFormatDropdown" data-bs-toggle="dropdown">
-                                    <i class="fas fa-wifi me-2"></i> Format
-                                </button>
-                                <ul class="dropdown-menu w-100">
-                                    <li><a class="dropdown-item format-filter-btn active" href="#" data-format="all">All Formats</a></li>
-                                    <li><a class="dropdown-item format-filter-btn" href="#" data-format="online">Online</a></li>
-                                    <li><a class="dropdown-item format-filter-btn" href="#" data-format="offline">Offline</a></li>
-                                    <li><a class="dropdown-item format-filter-btn" href="#" data-format="hybrid">Hybrid</a></li>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="eventFormatDropdown">
+                                    <li><a class="dropdown-item format-filter-btn" data-format="all" href="#">Tất cả</a></li>
+                                    <li><a class="dropdown-item format-filter-btn" data-format="offline" href="#">Offline</a></li>
+                                    <li><a class="dropdown-item format-filter-btn" data-format="online" href="#">Online</a></li>
+                                    <li><a class="dropdown-item format-filter-btn" data-format="hybrid" href="#">Hybrid</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -150,208 +176,122 @@
         <!-- Event List -->
         <section class="event-list-section">
             <div class="container">
-                <div id="loadingEvents" class="text-center py-5" style="display: none;">
-                    <div class="spinner-border text-primary" role="status">
-                        <span class="visually-hidden">Loading...</span>
-                    </div>
-                    <p class="mt-2">Loading events...</p>
-                </div>
-                <div id="noEventsFound" style="display: none;"></div>
-                
                 <div class="row" id="eventContainer">
-                    <!-- Hardcoded Event Card 1 -->
-                    <div class="col-lg-4 col-md-6 mb-4" data-type="1" data-format="online">
-                        <div class="event-card" data-aos="fade-up">
-                            <div class="event-image">
-                                <img src="https://hub.edu.vn/wp-content/uploads/2023/12/event-default.jpg" alt="Workshop on Web Development" loading="lazy">
-                                <div class="event-badge">
-                                    <span class="badge bg-workshop">WORKSHOP</span>
-                                </div>
-                            </div>
-                            <div class="event-content">
-                                <h3 class="event-title">
-                                    <a href="chi-tiet-su-kien.html?id=1">Workshop on Web Development</a>
-                                </h3>
-                                <div class="event-meta">
-                                    <div class="meta-item date">
-                                        <i class="far fa-calendar-alt"></i> <span>June 15, 2023</span>
-                                    </div>
-                                    <div class="meta-item time">
-                                        <i class="far fa-clock"></i> <span>10:00 AM</span>
-                                    </div>
-                                    <div class="meta-item location">
-                                        <i class="fas fa-map-marker-alt"></i> <span>Online Zoom</span>
-                                    </div>
-                                    <div class="meta-item format">
-                                        <i class="fas fa-wifi"></i> <span>Online</span>
-                                    </div>
-                                </div>
-                                <p class="event-description">Learn the fundamentals of modern web development including HTML, CSS, and JavaScript from industry experts.</p>
-                                <div class="event-progress">
-                                    <div class="progress-label">
-                                        <span>Registration</span>
-                                        <span>45/100</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="event-footer">
-                                    <div class="event-status status-open">Registration Open</div>
-                                    <div class="event-actions">
-                                        <a href="chi-tiet-su-kien.html?id=1" class="btn btn-sm btn-primary">
-                                            Details
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Hardcoded Event Card 2 -->
-                    <div class="col-lg-4 col-md-6 mb-4" data-type="2" data-format="offline">
-                        <div class="event-card" data-aos="fade-up">
-                            <div class="event-image">
-                                <img src="https://hub.edu.vn/wp-content/uploads/2023/12/event-default.jpg" alt="AI in Business Seminar" loading="lazy">
-                                <div class="event-badge">
-                                    <span class="badge bg-seminar">SEMINAR</span>
-                                </div>
-                            </div>
-                            <div class="event-content">
-                                <h3 class="event-title">
-                                    <a href="chi-tiet-su-kien.html?id=2">AI in Business Seminar</a>
-                                </h3>
-                                <div class="event-meta">
-                                    <div class="meta-item date">
-                                        <i class="far fa-calendar-alt"></i> <span>July 10, 2023</span>
-                                    </div>
-                                    <div class="meta-item time">
-                                        <i class="far fa-clock"></i> <span>2:00 PM</span>
-                                    </div>
-                                    <div class="meta-item location">
-                                        <i class="fas fa-map-marker-alt"></i> <span>Main Auditorium</span>
-                                    </div>
-                                    <div class="meta-item format">
-                                        <i class="fas fa-map-marker-alt"></i> <span>Offline</span>
-                                    </div>
-                                </div>
-                                <p class="event-description">Discover how AI is transforming business operations and decision-making processes across industries.</p>
-                                <div class="event-progress">
-                                    <div class="progress-label">
-                                        <span>Registration</span>
-                                        <span>75/100</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="event-footer">
-                                    <div class="event-status status-open">Registration Open</div>
-                                    <div class="event-actions">
-                                        <a href="chi-tiet-su-kien.html?id=2" class="btn btn-sm btn-primary">
-                                            Details
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Hardcoded Event Card 3 -->
-                    <div class="col-lg-4 col-md-6 mb-4" data-type="3" data-format="hybrid">
-                        <div class="event-card" data-aos="fade-up">
-                            <div class="event-image">
-                                <img src="https://hub.edu.vn/wp-content/uploads/2023/12/event-default.jpg" alt="Digital Marketing Conference" loading="lazy">
-                                <div class="event-badge">
-                                    <span class="badge bg-conference">CONFERENCE</span>
-                                </div>
-                            </div>
-                            <div class="event-content">
-                                <h3 class="event-title">
-                                    <a href="chi-tiet-su-kien.html?id=3">Digital Marketing Conference</a>
-                                </h3>
-                                <div class="event-meta">
-                                    <div class="meta-item date">
-                                        <i class="far fa-calendar-alt"></i> <span>August 5, 2023</span>
-                                    </div>
-                                    <div class="meta-item time">
-                                        <i class="far fa-clock"></i> <span>9:00 AM</span>
-                                    </div>
-                                    <div class="meta-item location">
-                                        <i class="fas fa-map-marker-alt"></i> <span>Conference Center</span>
-                                    </div>
-                                    <div class="meta-item format">
-                                        <i class="fas fa-laptop-house"></i> <span>Hybrid</span>
-                                    </div>
-                                </div>
-                                <p class="event-description">Join industry leaders to explore the latest trends and strategies in digital marketing and social media.</p>
-                                <div class="event-progress">
-                                    <div class="progress-label">
-                                        <span>Registration</span>
-                                        <span>120/150</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="event-footer">
-                                    <div class="event-status status-closing">3 days left</div>
-                                    <div class="event-actions">
-                                        <a href="chi-tiet-su-kien.html?id=3" class="btn btn-sm btn-primary">
-                                            Details
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Các thẻ sự kiện sẽ được tạo động bằng JavaScript -->
+                </div>
+
+                <!-- No Events Found (Initially Hidden) -->
+                <div id="noEventsFound" class="text-center py-5 d-none">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6134/6134065.png" alt="No Events" width="120" class="mb-3">
+                    <h3>Không tìm thấy sự kiện</h3>
+                    <p class="text-muted">Không tìm thấy sự kiện nào phù hợp với tiêu chí tìm kiếm của bạn.</p>
+                    <button id="resetSearch" class="btn btn-primary mt-2">
+                        <i class="fas fa-sync-alt me-2"></i>Xem tất cả sự kiện
+                    </button>
                 </div>
                 
-                <!-- PAGINATION -->
-                <div id="pagination" class="mt-4">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" aria-label="Previous" data-page="0">
-                                <i class="fas fa-chevron-left"></i>
-                            </a>
-                        </li>
-                        <li class="page-item active"><a class="page-link" href="#" data-page="1">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#" data-page="2">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#" data-page="3">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next" data-page="2">
-                                <i class="fas fa-chevron-right"></i>
-                            </a>
-                        </li>
+                <!-- Loading indicator -->
+                <div id="loadingEvents" class="text-center py-5 d-none">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Đang tải...</span>
+                    </div>
+                    <p class="mt-2">Đang tải sự kiện...</p>
+                </div>
+                
+                <!-- Pagination -->
+                <nav aria-label="Phân trang sự kiện" class="mt-4">
+                    <ul class="pagination justify-content-center" id="pagination">
+                        <!-- Phân trang sẽ được tạo động bằng JavaScript -->
                     </ul>
+                </nav>
+
+                <!-- Thêm div này để hiển thị khi có lỗi -->
+                <div id="fallbackContainer" class="error-container d-none">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6134/6134065.png" alt="Error loading events">
+                    <h3>Không thể tải danh sách sự kiện</h3>
+                    <p>Đã xảy ra lỗi khi tải danh sách sự kiện. Vui lòng thử lại sau.</p>
+                    <button class="btn btn-primary" id="retryLoadEvents">
+                        <i class="fas fa-sync-alt me-2"></i>Thử lại
+                    </button>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer id="contact">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="assets/logo/HUB-logo-white.png" alt="HUB Logo">
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="footer-title">Về chúng tôi</h5>
+                    <p>
+                        Trường Đại học Ngân hàng TP.HCM là một trong những cơ sở giáo dục đại học hàng đầu trong lĩnh vực tài chính - ngân hàng tại Việt Nam.
+                    </p>
+                    <div class="mt-4">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="su-kien.html">Events</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                <div class="col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="footer-title">Liên kết</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="http://127.0.0.1:5500/template/trang-chu.html" class="footer-link">
+                                <i class="fas fa-chevron-right me-2"></i> Trang chủ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/template/su-kien.html" class="footer-link">
+                                <i class="fas fa-chevron-right me-2"></i> Sự kiện
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/template/gioi-thieu.html" class="footer-link">
+                                <i class="fas fa-chevron-right me-2"></i> Giới thiệu
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/template/lien-he.html" class="footer-link">
+                                <i class="fas fa-chevron-right me-2"></i> Liên hệ
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div class="footer-social">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="footer-title">Liên hệ</h5>
+                    <ul class="list-unstyled">
+                        <li class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span class="contact-text">36 Tôn Thất Đạm, Q.1, TP.HCM</span>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span class="contact-text">(028) 38 212 593</span>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span class="contact-text">info@hub.edu.vn</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <h5 class="footer-title">Bản đồ</h5>
+                    <div class="rounded overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6219257597554!2d106.70230851744384!3d10.765753899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4949dbf177%3A0x77c434e30fb9ce86!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBOZ8OibiBIw6BuZyBUUC5IQ00!5e0!3m2!1svi!2s!4v1647942508574!5m2!1svi!2s" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy" title="Bản đồ Trường Đại học Ngân hàng TP.HCM"></iframe>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 HUB Template. All rights reserved.</p>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p>&copy; 2025 Trường Đại học Ngân hàng TP.HCM</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p>Thiết kế bởi Ban Truyền thông HUB</p>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -361,114 +301,58 @@
         <i class="fas fa-arrow-up"></i>
     </a>
 
-    <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Simple filter functionality without data fetching
-        document.addEventListener('DOMContentLoaded', function() {
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const formatFilterButtons = document.querySelectorAll('.format-filter-btn');
-            const eventCards = document.querySelectorAll('#eventContainer > div');
-            const searchInput = document.getElementById('eventSearchInput');
-            const searchButton = document.getElementById('searchButton');
-            
-            // Type filter
-            filterButtons.forEach(btn => {
-                btn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    // Update UI
-                    filterButtons.forEach(b => b.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    const filterValue = this.getAttribute('data-filter');
-                    filterEvents();
-                });
-            });
-            
-            // Format filter
-            formatFilterButtons.forEach(btn => {
-                btn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    // Update UI
-                    formatFilterButtons.forEach(b => b.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    filterEvents();
-                });
-            });
-            
-            // Search
-            if (searchButton) {
-                searchButton.addEventListener('click', function() {
-                    filterEvents();
-                });
-            }
-            
-            if (searchInput) {
-                searchInput.addEventListener('keyup', function(e) {
-                    if (e.key === 'Enter') {
-                        filterEvents();
-                    }
-                });
-            }
-            
-            function filterEvents() {
-                const activeTypeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
-                const activeFormatFilter = document.querySelector('.format-filter-btn.active').getAttribute('data-format');
-                const searchTerm = searchInput ? searchInput.value.trim().toLowerCase() : '';
-                
-                let visibleCount = 0;
-                
-                eventCards.forEach(card => {
-                    const cardType = card.getAttribute('data-type');
-                    const cardFormat = card.getAttribute('data-format');
-                    const cardContent = card.textContent.toLowerCase();
-                    
-                    let matchesType = activeTypeFilter === 'all' || cardType === activeTypeFilter;
-                    let matchesFormat = activeFormatFilter === 'all' || cardFormat === activeFormatFilter;
-                    let matchesSearch = !searchTerm || cardContent.includes(searchTerm);
-                    
-                    if (matchesType && matchesFormat && matchesSearch) {
-                        card.style.display = '';
-                        visibleCount++;
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-                
-                const noEventsFound = document.getElementById('noEventsFound');
-                if (visibleCount === 0 && noEventsFound) {
-                    noEventsFound.style.display = 'block';
-                    noEventsFound.innerHTML = `
-                        <div class="empty-state">
-                            <div class="empty-state-icon">
-                                <i class="fas fa-calendar-times"></i>
-                            </div>
-                            <h3>No events found</h3>
-                            <p class="empty-state-text">No events match your search criteria.</p>
-                            <button class="btn btn-primary" id="resetSearchButton">
-                                <i class="fas fa-sync-alt me-2"></i> View all events
-                            </button>
+    <!-- Template cho card sự kiện -->
+    <template id="event-card-template">
+        <div class="col-lg-4 col-md-6 mb-4" data-type="" data-format="">
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="" alt="" loading="lazy">
+                    <div class="event-badge">
+                        <span class="badge"></span>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <h3 class="event-title">
+                        <a href="#"></a>
+                    </h3>
+                    <div class="event-meta">
+                        <div class="meta-item date">
+                            <i class="far fa-calendar-alt"></i> <span></span>
                         </div>
-                    `;
-                    
-                    document.getElementById('resetSearchButton').addEventListener('click', function() {
-                        searchInput.value = '';
-                        filterButtons.forEach(btn => btn.classList.remove('active'));
-                        document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
-                        
-                        formatFilterButtons.forEach(btn => btn.classList.remove('active'));
-                        document.querySelector('.format-filter-btn[data-format="all"]').classList.add('active');
-                        
-                        filterEvents();
-                    });
-                } else if (noEventsFound) {
-                    noEventsFound.style.display = 'none';
-                }
-            }
-        });
-    </script>
+                        <div class="meta-item location">
+                            <i class="fas fa-map-marker-alt"></i> <span></span>
+                        </div>
+                        <div class="meta-item participants">
+                            <i class="fas fa-users"></i> <span></span>
+                        </div>
+                        <div class="meta-item format">
+                            <i class="fas fa-wifi"></i> <span></span>
+                        </div>
+                    </div>
+                    <p class="event-description"></p>
+                    <div class="event-stats">
+                        <div class="stat views">
+                            <i class="far fa-eye"></i> <span></span>
+                        </div>
+                        <div class="stat registrations">
+                            <i class="far fa-user"></i> <span></span>
+                        </div>
+                    </div>
+                    <div class="event-actions">
+                        <a href="#" class="btn-view-details">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="su-kien/script.js"></script>
 </body>
 </html>
