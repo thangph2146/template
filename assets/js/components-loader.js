@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("Components loader initialized");
     
     // Load header
-    loadComponent('header-container', 'assets/components/header.html', function() {
+    loadComponent('header-container', 'components/header.html', function() {
         // After header is loaded, initialize its functionality
         if (typeof highlightActiveMenuItem === 'function') {
             highlightActiveMenuItem();
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
     // Load footer
-    loadComponent('footer-container', 'assets/components/footer.html', function() {
+    loadComponent('footer-container', 'components/footer.html', function() {
         // After footer is loaded, initialize its functionality
         if (typeof initBackToTopButton === 'function') {
             initBackToTopButton();

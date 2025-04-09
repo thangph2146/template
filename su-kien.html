@@ -44,61 +44,8 @@
         <div class="spinner"></div>
     </div>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="trang-chu.html" aria-label="Trang chủ Đại học Ngân hàng TP.HCM">
-                <img src="https://hub.edu.vn/wp-content/uploads/2023/09/HUB-logo-white.png" alt="HUB Logo" height="40">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="http://127.0.0.1:5500/template/trang-chu.html">
-                            <i class="fas fa-home me-1"></i> Trang chủ
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="http://127.0.0.1:5500/template/su-kien.html" aria-current="page">
-                            <i class="fas fa-calendar-alt me-1"></i> Sự kiện
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="eventTypeDropdownLink" aria-expanded="false" aria-haspopup="true">
-                            <i class="fas fa-filter me-1"></i> Loại sự kiện
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="eventTypeDropdownLink">
-                            <li><a class="dropdown-item filter-btn" data-filter="all" href="http://127.0.0.1:5500/template/su-kien.html">Tất cả</a></li>
-                            <li><a class="dropdown-item filter-btn" data-filter="1" href="http://127.0.0.1:5500/template/su-kien.html?type=1">Hội thảo</a></li>
-                            <li><a class="dropdown-item filter-btn" data-filter="2" href="http://127.0.0.1:5500/template/su-kien.html?type=2">Hội nghị</a></li>
-                            <li><a class="dropdown-item filter-btn" data-filter="3" href="http://127.0.0.1:5500/template/su-kien.html?type=3">Workshop</a></li>
-                            <li><a class="dropdown-item filter-btn" data-filter="4" href="http://127.0.0.1:5500/template/su-kien.html?type=4">Khác</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            <i class="fas fa-calendar-alt me-1"></i>Dashboard
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="nguoi-dung/dang-ky-su-kien.html">Đăng ký sự kiện</a></li>
-                            <li><a class="dropdown-item" href="nguoi-dung/lich-su-dang-ky.html">Lịch sử đăng ký</a></li>
-                            <li><a class="dropdown-item" href="nguoi-dung/thong-tin-ca-nhan.html">Thông tin cá nhân</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="d-flex align-items-center gap-2">
-                    <a href="https://hub.edu.vn" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm px-3">
-                        <i class="fas fa-external-link-alt me-1"></i> HUB
-                    </a>
-                    <a href="http://127.0.0.1:5500/template/dang-nhap.html" class="btn btn-light btn-sm px-3 me-2 btn-login">
-                        <i class="fas fa-user-plus me-1"></i> Đăng nhập
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <!-- Header container -->
+    <div id="header-container"></div>
 
     <!-- Content Area -->
     <main>
@@ -218,83 +165,8 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <h5 class="footer-title">Về chúng tôi</h5>
-                    <p>
-                        Trường Đại học Ngân hàng TP.HCM là một trong những cơ sở giáo dục đại học hàng đầu trong lĩnh vực tài chính - ngân hàng tại Việt Nam.
-                    </p>
-                    <div class="mt-4">
-                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <h5 class="footer-title">Liên kết</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="http://127.0.0.1:5500/template/trang-chu.html" class="footer-link">
-                                <i class="fas fa-chevron-right me-2"></i> Trang chủ
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://127.0.0.1:5500/template/su-kien.html" class="footer-link">
-                                <i class="fas fa-chevron-right me-2"></i> Sự kiện
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://127.0.0.1:5500/template/gioi-thieu.html" class="footer-link">
-                                <i class="fas fa-chevron-right me-2"></i> Giới thiệu
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://127.0.0.1:5500/template/lien-he.html" class="footer-link">
-                                <i class="fas fa-chevron-right me-2"></i> Liên hệ
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <h5 class="footer-title">Liên hệ</h5>
-                    <ul class="list-unstyled">
-                        <li class="contact-item">
-                            <i class="fas fa-map-marker-alt contact-icon"></i>
-                            <span class="contact-text">36 Tôn Thất Đạm, Q.1, TP.HCM</span>
-                        </li>
-                        <li class="contact-item">
-                            <i class="fas fa-phone contact-icon"></i>
-                            <span class="contact-text">(028) 38 212 593</span>
-                        </li>
-                        <li class="contact-item">
-                            <i class="fas fa-envelope contact-icon"></i>
-                            <span class="contact-text">info@hub.edu.vn</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
-                    <h5 class="footer-title">Bản đồ</h5>
-                    <div class="rounded overflow-hidden">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6219257597554!2d106.70230851744384!3d10.765753899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4949dbf177%3A0x77c434e30fb9ce86!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBOZ8OibiBIw6BuZyBUUC5IQ00!5e0!3m2!1svi!2s!4v1647942508574!5m2!1svi!2s" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy" title="Bản đồ Trường Đại học Ngân hàng TP.HCM"></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start">
-                        <p>&copy; 2025 Trường Đại học Ngân hàng TP.HCM</p>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <p>Thiết kế bởi Ban Truyền thông HUB</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer container -->
+    <div id="footer-container"></div>
 
     <!-- Back to Top -->
     <a href="#" class="back-to-top" aria-label="Về đầu trang">
@@ -354,5 +226,9 @@
     
     <!-- Custom JS -->
     <script src="su-kien/script.js"></script>
+    <!-- Component JS -->
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/footer.js"></script>
+    <script src="assets/js/components-loader.js"></script>
 </body>
 </html>
