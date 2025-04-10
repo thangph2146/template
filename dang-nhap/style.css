@@ -518,6 +518,7 @@ body, html {
 
 /* === HERO BANNER === */
 .hero-banner {
+    height: 100vh;
     background: linear-gradient(135deg, var(--primary-dark), var(--primary)) !important;
     color: var(--white-color);
     padding: 8rem 0 6rem;

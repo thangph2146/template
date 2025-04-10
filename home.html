@@ -42,142 +42,216 @@
 
     <!-- Main Content -->
     <main>
-        <section class="events">
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <div id="particles-js"></div>
             <div class="container">
-                <h2 class="text-center section-title">Sự Kiện</h2>
-                <div class="row">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="welcome-text">
+                            <span class="welcome-badge">Chào mừng bạn</span>
+                            <h1 class="hero-title">Cổng Thông Tin Sự Kiện <span class="text-highlight">HUB</span></h1>
+                            <p class="hero-subtitle">Chào mừng sinh viên và mọi người đến với trang sự kiện của Trường Đại học Ngân hàng Thành phố Hồ Chí Minh. Khám phá, kết nối và phát triển cùng cộng đồng HUB!</p>
+                            <div class="hero-actions">
+                                <a href="#events" class="btn btn-primary btn-lg me-2"><i class="fas fa-calendar-alt me-2"></i>Xem sự kiện</a>
+                                <a href="#registration" class="btn btn-outline-light btn-lg"><i class="fas fa-user-plus me-2"></i>Đăng ký ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image">
+                            <img src="assets\logo\HUB-logo-white.png" alt="HUB Events" class="img-fluid rounded shadow">
+                            <div class="hero-stats">
+                                <div class="hero-stat-item text-white">
+                                    <span class="stat-number text-white">25+</span>
+                                    <span class="stat-label text-white">Sự kiện/năm</span>
+                                </div>
+                                <div class="hero-stat-item text-white">
+                                    <span class="stat-number text-white">500+</span>
+                                    <span class="stat-label text-white">Người tham gia</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-shapes">
+                <div class="shape-1"></div>
+                <div class="shape-2"></div>
+                <div class="shape-3"></div>
+            </div>
+        </section>
+
+        <!-- Featured Events -->
+        <section id="events" class="events py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="section-badge">Sự kiện</span>
+                    <h2 class="section-title">Sự Kiện Nổi Bật</h2>
+                    <p class="section-subtitle">Khám phá những sự kiện đặc sắc đang diễn ra tại Trường Đại học Ngân hàng TP.HCM</p>
+                    <div class="event-filters mt-4">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="search-filter-container">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Tìm kiếm sự kiện..." id="event-search">
+                                        <select class="form-select" id="event-category" style="max-width: 180px;">
+                                            <option value="all">Tất cả loại</option>
+                                            <option value="workshop">Hội thảo</option>
+                                            <option value="competition">Cuộc thi</option>
+                                            <option value="career">Ngày hội việc làm</option>
+                                        </select>
+                                        <button class="btn btn-primary search-btn" type="button" id="search-btn">
+                                            <i class="fas fa-search me-1"></i> Tìm kiếm
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="event-list">
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="event-card" data-event-name="Ngày hội việc làm Banking Career Day 2023" data-event-date="2023-11-15T09:00:00">
-                            <div class="event-image">
-                                <img src="https://hub.edu.vn/wp-content/uploads/2023/10/banking-career-day.jpg" alt="Ngày hội việc làm Banking Career Day 2023">
+                        <div class="event-card shadow-sm h-100" data-event-name="Ngày hội việc làm Banking Career Day 2023" data-event-date="2023-11-15T09:00:00" data-event-category="career">
+                            <div class="event-image position-relative">
+                                <img src="https://hub.edu.vn/wp-content/uploads/2023/10/banking-career-day.jpg" alt="Ngày hội việc làm Banking Career Day 2023" class="img-fluid">
                                 <div class="event-tag">
                                     <span class="tag-color tag-color-blue"></span>
-                                    Ngày hội
+                                    <span class="tag-text">Ngày hội</span>
+                                </div>
+                                <div class="event-date-badge">
+                                    <span class="date-day">15</span>
+                                    <span class="date-month">Tháng 11</span>
                                 </div>
                             </div>
-                            <div class="event-content">
-                                <div class="event-meta">
+                            <div class="event-content p-3">
+                                <h3 class="event-title">
+                                    <a href="chi-tiet-su-kien.html?id=banking-career-day" class="text-decoration-none stretched-link">Ngày hội việc làm Banking Career Day 2023</a>
+                                </h3>
+                                <div class="event-meta my-3">
                                     <div class="meta-item">
-                                        <i class="far fa-calendar-alt"></i> 15/11/2023
+                                        <i class="far fa-clock text-primary"></i> 09:00 - 17:00
                                     </div>
                                     <div class="meta-item">
-                                        <i class="far fa-clock"></i> 09:00 - 17:00
-                                    </div>
-                                    <div class="meta-item">
-                                        <i class="fas fa-map-marker-alt"></i> Sân khấu ngoài trời, Cơ sở 36 Tôn Thất Đạm
+                                        <i class="fas fa-map-marker-alt text-danger"></i> Sân khấu ngoài trời, Cơ sở 36 Tôn Thất Đạm
                                     </div>
                                 </div>
-                                <h3 class="event-title">
-                                    <a href="#">Ngày hội việc làm Banking Career Day 2023</a>
-                                </h3>
                                 <div class="event-description">
                                     Sân chơi cho sinh viên thể hiện ý tưởng khởi nghiệp sáng tạo, với tổng giá trị giải thưởng lên đến 50 triệu đồng.
                                 </div>
-                                <div class="event-footer">
-                                    <div class="event-progress">
-                                        <div class="progress-label">
-                                            <span>Đã đăng ký: 25/60</span>
-                                            <span>42%</span>
+                                <div class="event-footer mt-3 pt-3 border-top">
+                                    <div class="event-progress mb-2">
+                                        <div class="progress-label d-flex justify-content-between">
+                                            <span>Đã đăng ký: <strong>25/60</strong></span>
+                                            <span class="text-primary">42%</span>
                                         </div>
-                                        <div class="progress">
-                                            <div class="progress-bar" style="width: 42%"></div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-primary" style="width: 42%" role="progressbar" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
-                                    <div class="event-actions">
-                                        <a href="#registration" class="btn btn-primary">Đăng ký ngay</a>
+                                    <div class="event-actions text-center mt-3">
+                                        <a href="#registration" class="btn btn-primary w-100"><i class="fas fa-user-plus me-2"></i>Đăng ký ngay</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="event-card" data-event-name="Hội thảo định hướng nghề nghiệp ngành Tài chính - Ngân hàng" data-event-date="2024-01-10T08:00:00">
-                            <div class="event-image">
-                                <img src="https://hub.edu.vn/wp-content/uploads/2023/10/cuoc-thi-y-tuong.jpg" alt="Hội thảo định hướng nghề nghiệp ngành Tài chính - Ngân hàng">
+                        <div class="event-card shadow-sm h-100" data-event-name="Hội thảo định hướng nghề nghiệp ngành Tài chính - Ngân hàng" data-event-date="2024-01-10T08:00:00" data-event-category="workshop">
+                            <div class="event-image position-relative">
+                                <img src="https://hub.edu.vn/wp-content/uploads/2023/10/cuoc-thi-y-tuong.jpg" alt="Hội thảo định hướng nghề nghiệp ngành Tài chính - Ngân hàng" class="img-fluid">
+                                <div class="event-tag">
+                                    <span class="tag-color tag-color-purple"></span>
+                                    <span class="tag-text">Hội thảo</span>
+                                </div>
+                                <div class="event-date-badge">
+                                    <span class="date-day">10</span>
+                                    <span class="date-month">Tháng 1</span>
+                                </div>
+                            </div>
+                            <div class="event-content p-3">
+                                <h3 class="event-title">
+                                    <a href="chi-tiet-su-kien.html?id=workshop-finance" class="text-decoration-none stretched-link">Hội thảo định hướng nghề nghiệp ngành Tài chính - Ngân hàng</a>
+                                </h3>
+                                <div class="event-meta my-3">
+                                    <div class="meta-item">
+                                        <i class="far fa-clock text-primary"></i> 08:00 - 17:00
+                                    </div>
+                                    <div class="meta-item">
+                                        <i class="fas fa-map-marker-alt text-danger"></i> Sân khấu ngoài trời, Cơ sở 36 Tôn Thất Đạm
+                                    </div>
+                                </div>
+                                <div class="event-description">
+                                    Cơ hội tìm hiểu về các xu hướng ngành tài chính - ngân hàng và gặp gỡ các chuyên gia hàng đầu trong lĩnh vực.
+                                </div>
+                                <div class="event-footer mt-3 pt-3 border-top">
+                                    <div class="event-progress mb-2">
+                                        <div class="progress-label d-flex justify-content-between">
+                                            <span>Đã đăng ký: <strong>25/60</strong></span>
+                                            <span class="text-primary">42%</span>
+                                        </div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-primary" style="width: 42%" role="progressbar" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="event-actions text-center mt-3">
+                                        <a href="#registration" class="btn btn-primary w-100"><i class="fas fa-user-plus me-2"></i>Đăng ký ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="event-card shadow-sm h-100" data-event-name="Cuộc thi ý tưởng khởi nghiệp sáng tạo HUB 2024" data-event-date="2024-01-10T08:00:00" data-event-category="competition">
+                            <div class="event-image position-relative">
+                                <img src="https://hub.edu.vn/wp-content/uploads/2023/10/cuoc-thi-y-tuong.jpg" alt="Cuộc thi ý tưởng khởi nghiệp" class="img-fluid">
                                 <div class="event-tag">
                                     <span class="tag-color tag-color-green"></span>
-                                    Cuộc thi
+                                    <span class="tag-text">Cuộc thi</span>
+                                </div>
+                                <div class="event-date-badge">
+                                    <span class="date-day">10</span>
+                                    <span class="date-month">Tháng 1</span>
                                 </div>
                             </div>
-                            <div class="event-content">
-                                <div class="event-meta">
+                            <div class="event-content p-3">
+                                <h3 class="event-title">
+                                    <a href="chi-tiet-su-kien.html?id=startup-competition" class="text-decoration-none stretched-link">Cuộc thi ý tưởng khởi nghiệp sáng tạo HUB 2024</a>
+                                </h3>
+                                <div class="event-meta my-3">
                                     <div class="meta-item">
-                                        <i class="far fa-calendar-alt"></i> 10/01/2024
+                                        <i class="far fa-clock text-primary"></i> 08:00 - 17:00
                                     </div>
                                     <div class="meta-item">
-                                        <i class="far fa-clock"></i> 08:00 - 17:00
-                                    </div>
-                                    <div class="meta-item">
-                                        <i class="fas fa-map-marker-alt"></i> Sân khấu ngoài trời, Cơ sở 36 Tôn Thất Đạm
+                                        <i class="fas fa-map-marker-alt text-danger"></i> Sân khấu ngoài trời, Cơ sở 36 Tôn Thất Đạm
                                     </div>
                                 </div>
-                                <h3 class="event-title">
-                                    <a href="#">Hội thảo định hướng nghề nghiệp ngành Tài chính - Ngân hàng</a>
-                                </h3>
                                 <div class="event-description">
                                     Sân chơi cho sinh viên thể hiện ý tưởng khởi nghiệp sáng tạo, với tổng giá trị giải thưởng lên đến 50 triệu đồng.
                                 </div>
-                                <div class="event-footer">
-                                    <div class="event-progress">
-                                        <div class="progress-label">
-                                            <span>Đã đăng ký: 25/60</span>
-                                            <span>42%</span>
+                                <div class="event-footer mt-3 pt-3 border-top">
+                                    <div class="event-progress mb-2">
+                                        <div class="progress-label d-flex justify-content-between">
+                                            <span>Đã đăng ký: <strong>25/60</strong></span>
+                                            <span class="text-primary">42%</span>
                                         </div>
-                                        <div class="progress">
-                                            <div class="progress-bar" style="width: 42%"></div>
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-primary" style="width: 42%" role="progressbar" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
-                                    <div class="event-actions">
-                                        <a href="#registration" class="btn btn-primary">Đăng ký ngay</a>
+                                    <div class="event-actions text-center mt-3">
+                                        <a href="#registration" class="btn btn-primary w-100"><i class="fas fa-user-plus me-2"></i>Đăng ký ngay</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="event-card" data-event-name="Cuộc thi ý tưởng khởi nghiệp sáng tạo HUB 2024" data-event-date="2024-01-10T08:00:00">
-                            <div class="event-image">
-                                <img src="https://hub.edu.vn/wp-content/uploads/2023/10/cuoc-thi-y-tuong.jpg" alt="Cuộc thi ý tưởng khởi nghiệp">
-                                <div class="event-tag">
-                                    <span class="tag-color tag-color-green"></span>
-                                    Cuộc thi
-                                </div>
-                            </div>
-                            <div class="event-content">
-                                <div class="event-meta">
-                                    <div class="meta-item">
-                                        <i class="far fa-calendar-alt"></i> 10/01/2024
-                                    </div>
-                                    <div class="meta-item">
-                                        <i class="far fa-clock"></i> 08:00 - 17:00
-                                    </div>
-                                    <div class="meta-item">
-                                        <i class="fas fa-map-marker-alt"></i> Sân khấu ngoài trời, Cơ sở 36 Tôn Thất Đạm
-                                    </div>
-                                </div>
-                                <h3 class="event-title">
-                                    <a href="#">Cuộc thi ý tưởng khởi nghiệp sáng tạo HUB 2024</a>
-                                </h3>
-                                <div class="event-description">
-                                    Sân chơi cho sinh viên thể hiện ý tưởng khởi nghiệp sáng tạo, với tổng giá trị giải thưởng lên đến 50 triệu đồng.
-                                </div>
-                                <div class="event-footer">
-                                    <div class="event-progress">
-                                        <div class="progress-label">
-                                            <span>Đã đăng ký: 25/60</span>
-                                            <span>42%</span>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar" style="width: 42%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="event-actions">
-                                        <a href="#registration" class="btn btn-primary">Đăng ký ngay</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="su-kien.html" class="btn btn-outline-primary btn-lg">Xem tất cả sự kiện <i class="fas fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
         </section>
@@ -195,35 +269,47 @@
         </section>
 
         <!-- Why Join Events -->
-        <section class="why-join-events">
+        <section class="why-join-events py-5 bg-light">
             <div class="container">
-                <h2 class="text-center section-title">Tại Sao Nên Tham Gia Sự Kiện</h2>
+                <div class="section-header text-center mb-5">
+                    <h2 class="section-title">Tại Sao Nên Tham Gia Sự Kiện</h2>
+                    <p class="section-subtitle">Khám phá những lợi ích khi tham gia các sự kiện tại HUB</p>
+                </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="reason-card">
-                            <div class="reason-icon">
-                                <i class="fas fa-lightbulb"></i>
+                        <div class="reason-card h-100 p-4 bg-white rounded shadow-sm text-center">
+                            <div class="reason-icon mb-3">
+                                <div class="icon-circle bg-primary-light">
+                                    <i class="fas fa-lightbulb text-primary"></i>
+                                </div>
                             </div>
-                            <h3>Nâng cao kiến thức</h3>
-                            <p>Cập nhật kiến thức mới nhất từ các chuyên gia đầu ngành trong lĩnh vực tài chính, ngân hàng và kinh tế. Mở rộng hiểu biết về các xu hướng và thách thức trong thị trường hiện tại.</p>
+                            <h3 class="reason-title h4">Nâng cao kiến thức</h3>
+                            <p class="reason-content">Cập nhật kiến thức mới nhất từ các chuyên gia đầu ngành trong lĩnh vực tài chính, ngân hàng và kinh tế. Mở rộng hiểu biết về các xu hướng và thách thức trong thị trường hiện tại.</p>
+                            <a href="#" class="btn btn-link text-primary">Tìm hiểu thêm <i class="fas fa-arrow-right ms-1"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="reason-card">
-                            <div class="reason-icon">
-                                <i class="fas fa-users"></i>
+                        <div class="reason-card h-100 p-4 bg-white rounded shadow-sm text-center">
+                            <div class="reason-icon mb-3">
+                                <div class="icon-circle bg-success-light">
+                                    <i class="fas fa-users text-success"></i>
+                                </div>
                             </div>
-                            <h3>Mở rộng mạng lưới</h3>
-                            <p>Kết nối với các sinh viên, chuyên gia và nhà tuyển dụng trong ngành. Xây dựng mạng lưới quan hệ chuyên nghiệp, tạo cơ hội hợp tác và phát triển nghề nghiệp trong tương lai.</p>
+                            <h3 class="reason-title h4">Mở rộng mạng lưới</h3>
+                            <p class="reason-content">Kết nối với các sinh viên, chuyên gia và nhà tuyển dụng trong ngành. Xây dựng mạng lưới quan hệ chuyên nghiệp, tạo cơ hội hợp tác và phát triển nghề nghiệp trong tương lai.</p>
+                            <a href="#" class="btn btn-link text-primary">Tìm hiểu thêm <i class="fas fa-arrow-right ms-1"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="reason-card">
-                            <div class="reason-icon">
-                                <i class="fas fa-briefcase"></i>
+                        <div class="reason-card h-100 p-4 bg-white rounded shadow-sm text-center">
+                            <div class="reason-icon mb-3">
+                                <div class="icon-circle bg-info-light">
+                                    <i class="fas fa-briefcase text-info"></i>
+                                </div>
                             </div>
-                            <h3>Cơ hội việc làm</h3>
-                            <p>Tiếp cận trực tiếp với các nhà tuyển dụng hàng đầu trong ngành. Tìm hiểu về các vị trí thực tập và việc làm tiềm năng, đồng thời hiểu rõ hơn về yêu cầu và kỳ vọng của nhà tuyển dụng.</p>
+                            <h3 class="reason-title h4">Cơ hội việc làm</h3>
+                            <p class="reason-content">Tiếp cận trực tiếp với các nhà tuyển dụng hàng đầu trong ngành. Tìm hiểu về các vị trí thực tập và việc làm tiềm năng, đồng thời hiểu rõ hơn về yêu cầu và kỳ vọng của nhà tuyển dụng.</p>
+                            <a href="#" class="btn btn-link text-primary">Tìm hiểu thêm <i class="fas fa-arrow-right ms-1"></i></a>
                         </div>
                     </div>
                 </div>
@@ -231,114 +317,286 @@
         </section>
 
         <!-- Testimonials -->
-        <section class="testimonials">
+        <section id="testimonials" class="testimonials py-5 bg-light">
             <div class="container">
-                <h2 class="text-center section-title">Cảm Nhận Nổi Bật</h2>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="testimonial-card">
-                            <div class="testimonial-avatar">
-                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Testimonial" class="img-fluid">
+                <div class="section-header text-center mb-5">
+                    <span class="section-badge">Phản hồi</span>
+                    <h2 class="section-title">Chia Sẻ Từ Người Tham Gia</h2>
+                    <p class="section-subtitle">Những trải nghiệm và cảm nhận từ sinh viên và khách mời tham gia sự kiện</p>
+                </div>
+                
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-quote">
+                                                <i class="fas fa-quote-left"></i>
+                                            </div>
+                                            <p>Hội thảo về Blockchain đã mở ra cho tôi nhiều cơ hội nghề nghiệp mới. Kiến thức từ các chuyên gia thực sự hữu ích và thiết thực.</p>
+                                            <div class="testimonial-author">
+                                                <div class="testimonial-avatar">
+                                                    <img src="https://i.pravatar.cc/150?img=11" alt="Nguyễn Văn A">
+                                                </div>
+                                                <div class="testimonial-info">
+                                                    <h5>Nguyễn Văn A</h5>
+                                                    <span>Sinh viên năm 3, Khoa CNTT</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-quote">
+                                                <i class="fas fa-quote-left"></i>
+                                            </div>
+                                            <p>Cuộc thi Case Study do HUB tổ chức giúp tôi áp dụng kiến thức vào thực tiễn và xây dựng mạng lưới quan hệ với các doanh nghiệp.</p>
+                                            <div class="testimonial-author">
+                                                <div class="testimonial-avatar">
+                                                    <img src="https://i.pravatar.cc/150?img=5" alt="Trần Thị B">
+                                                </div>
+                                                <div class="testimonial-info">
+                                                    <h5>Trần Thị B</h5>
+                                                    <span>Sinh viên năm 4, Khoa Quản trị</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-quote">
+                                                <i class="fas fa-quote-left"></i>
+                                            </div>
+                                            <p>Ngày hội việc làm tại HUB đã giúp tôi tìm được vị trí thực tập mơ ước. Cảm ơn nhà trường đã tổ chức những sự kiện ý nghĩa như thế này.</p>
+                                            <div class="testimonial-author">
+                                                <div class="testimonial-avatar">
+                                                    <img src="https://i.pravatar.cc/150?img=8" alt="Lê Văn C">
+                                                </div>
+                                                <div class="testimonial-info">
+                                                    <h5>Lê Văn C</h5>
+                                                    <span>Cựu sinh viên, Khoa Tài chính</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="testimonial-content">
-                                <h4>Nguyễn Thị Ánh</h4>
-                                <p class="position">Sinh viên năm 3, Khoa Tài chính - Ngân hàng</p>
-                                <p>"Các sự kiện tại trường rất bổ ích, giúp mình hiểu rõ hơn về ngành nghề và có cơ hội kết nối với các doanh nghiệp lớn. Mình đã nhận được vị trí thực tập tại một ngân hàng lớn sau khi tham gia Ngày hội việc làm."</p>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-quote">
+                                                <i class="fas fa-quote-left"></i>
+                                            </div>
+                                            <p>Sự kiện networking tại HUB giúp tôi kết nối với nhiều nhà tuyển dụng tiềm năng. Đây là cơ hội quý báu cho sinh viên sắp tốt nghiệp như tôi.</p>
+                                            <div class="testimonial-author">
+                                                <div class="testimonial-avatar">
+                                                    <img src="https://i.pravatar.cc/150?img=12" alt="Phạm Thị D">
+                                                </div>
+                                                <div class="testimonial-info">
+                                                    <h5>Phạm Thị D</h5>
+                                                    <span>Sinh viên năm cuối, Khoa Marketing</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-quote">
+                                                <i class="fas fa-quote-left"></i>
+                                            </div>
+                                            <p>Workshop về kỹ năng phỏng vấn tại HUB đã chuẩn bị tốt cho tôi trước các buổi phỏng vấn thực tế. Rất hữu ích và thiết thực.</p>
+                                            <div class="testimonial-author">
+                                                <div class="testimonial-avatar">
+                                                    <img src="https://i.pravatar.cc/150?img=7" alt="Hoàng Văn E">
+                                                </div>
+                                                <div class="testimonial-info">
+                                                    <h5>Hoàng Văn E</h5>
+                                                    <span>Sinh viên năm 3, Khoa Kinh tế</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-quote">
+                                                <i class="fas fa-quote-left"></i>
+                                            </div>
+                                            <p>Chương trình tư vấn nghề nghiệp cá nhân tại HUB đã giúp tôi định hướng rõ ràng hơn về con đường sự nghiệp sau khi tốt nghiệp.</p>
+                                            <div class="testimonial-author">
+                                                <div class="testimonial-avatar">
+                                                    <img src="https://i.pravatar.cc/150?img=3" alt="Trương Thị F">
+                                                </div>
+                                                <div class="testimonial-info">
+                                                    <h5>Trương Thị F</h5>
+                                                    <span>Sinh viên năm 4, Khoa Quản trị</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="testimonial-card">
-                            <div class="testimonial-avatar">
-                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Testimonial" class="img-fluid">
+                    
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Form -->
+        <section id="registration" class="registration-form py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="form-container bg-white p-4 rounded shadow">
+                            <div class="section-header text-center mb-4">
+                                <h3 class="form-title">Đăng Ký Tham Gia Sự Kiện</h3>
+                                <p class="form-subtitle text-muted">Điền thông tin dưới đây để đăng ký tham gia các sự kiện sắp tới tại HUB</p>
                             </div>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="testimonial-content">
-                                <h4>Trần Minh Tuấn</h4>
-                                <p class="position">Cựu sinh viên, Khoa Quản trị Kinh doanh</p>
-                                <p>"Những hội thảo và workshop chuyên môn tại HUB đã giúp mình rèn luyện kỹ năng và định hướng nghề nghiệp rõ ràng. Đặc biệt, cuộc thi ý tưởng khởi nghiệp đã giúp mình phát triển dự án kinh doanh cá nhân."</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="testimonial-card">
-                            <div class="testimonial-avatar">
-                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Testimonial" class="img-fluid">
-                            </div>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="testimonial-content">
-                                <h4>Lê Thị Hồng Nhung</h4>
-                                <p class="position">Sinh viên năm 4, Khoa Kế toán - Kiểm toán</p>
-                                <p>"Sự kiện giao lưu với doanh nghiệp giúp mình hiểu rõ hơn về yêu cầu thực tế của thị trường lao động. Mình đã cải thiện được nhiều kỹ năng mềm và có cái nhìn thực tế hơn về công việc tương lai."</p>
-                            </div>
+                            <form id="registrationForm" class="needs-validation" novalidate>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="fullName" class="form-label">Họ và tên <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                            <input type="text" class="form-control" id="fullName" placeholder="Nhập họ và tên" required>
+                                            <div class="invalid-feedback">Vui lòng nhập họ và tên</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                            <input type="email" class="form-control" id="email" placeholder="Nhập email" required>
+                                            <div class="invalid-feedback">Vui lòng nhập email hợp lệ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">Số điện thoại <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                            <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại" required>
+                                            <div class="invalid-feedback">Vui lòng nhập số điện thoại</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="eventSelect" class="form-label">Sự kiện <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                            <select class="form-select" id="eventSelect" required>
+                                                <option value="" selected disabled>Chọn sự kiện</option>
+                                                <option value="event1">Ngày hội việc làm Banking Career Day 2023</option>
+                                                <option value="event2">Hội thảo định hướng nghề nghiệp ngành Tài chính - Ngân hàng</option>
+                                                <option value="event3">Cuộc thi ý tưởng khởi nghiệp sáng tạo HUB 2024</option>
+                                            </select>
+                                            <div class="invalid-feedback">Vui lòng chọn sự kiện</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Lời nhắn</label>
+                                    <textarea class="form-control" id="message" rows="3" placeholder="Nhập lời nhắn (nếu có)"></textarea>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+                                    <label class="form-check-label" for="agreeTerms">Tôi đồng ý với <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">điều khoản</a> và <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">chính sách bảo mật</a> <span class="text-danger">*</span></label>
+                                    <div class="invalid-feedback">Bạn phải đồng ý với điều khoản để tiếp tục</div>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                                        <i class="fas fa-paper-plane me-2"></i>Đăng ký ngay
+                                    </button>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <small class="text-muted">Chúng tôi sẽ liên hệ xác nhận qua email hoặc số điện thoại của bạn</small>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Registration Form -->
-        <section id="registration" class="registration-form">
+        <!-- Upcoming Events Highlights -->
+        <section class="upcoming-events py-5">
             <div class="container">
-                <div class="form-container">
-                    <h3 class="form-title">Đăng Ký Tham Gia Sự Kiện</h3>
-                    <form id="registrationForm">
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="fullName" class="form-label">Họ và tên <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="fullName" placeholder="Nhập họ và tên" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
-                                <input type="email" class="form-control" id="email" placeholder="Nhập email" required>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h2 class="section-title">Không bỏ lỡ cơ hội</h2>
+                        <p class="lead mb-4">Đăng ký nhận thông báo về các sự kiện sắp tới tại HUB</p>
+                        <div class="newsletter-form mb-4">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Nhập email của bạn">
+                                <button class="btn btn-primary" type="button">Đăng ký</button>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="phone" class="form-label">Số điện thoại <span class="text-danger">*</span></label>
-                                <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại" required>
+                        <div class="d-flex">
+                            <a href="su-kien.html" class="btn btn-outline-primary me-3">
+                                <i class="fas fa-calendar-alt me-2"></i>Lịch sự kiện
+                            </a>
+                            <a href="#contact" class="btn btn-outline-secondary">
+                                <i class="fas fa-phone-alt me-2"></i>Liên hệ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="event-stats-card p-4 rounded shadow bg-white">
+                            <h3 class="mb-4">Thống kê sự kiện</h3>
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value text-primary h2">25+</div>
+                                        <div class="stat-label">Sự kiện/năm</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value text-success h2">500+</div>
+                                        <div class="stat-label">Người tham gia</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value text-info h2">30+</div>
+                                        <div class="stat-label">Đối tác</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="eventSelect" class="form-label">Sự kiện <span class="text-danger">*</span></label>
-                                <select class="form-select" id="eventSelect" required>
-                                    <option value="" selected disabled>Chọn sự kiện</option>
-                                    <option value="event1">Ngày hội việc làm Banking Career Day 2023</option>
-                                    <option value="event2">Hội thảo định hướng nghề nghiệp ngành Tài chính - Ngân hàng</option>
-                                    <option value="event3">Cuộc thi ý tưởng khởi nghiệp sáng tạo HUB 2024</option>
-                                </select>
-                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Lời nhắn</label>
-                            <textarea class="form-control" id="message" rows="3" placeholder="Nhập lời nhắn (nếu có)"></textarea>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="agreeTerms" required>
-                            <label class="form-check-label" for="agreeTerms">Tôi đồng ý với <a href="#">điều khoản</a> và <a href="#">chính sách bảo mật</a> <span class="text-danger">*</span></label>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-lg">Đăng ký ngay</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -347,8 +605,9 @@
     <!-- Footer container -->
     <div id="footer-container"></div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     
     <!-- Utility JS -->
     <script src="assets/utils/date-formatter.js"></script>
@@ -361,5 +620,562 @@
     
     <!-- Custom JS -->
     <script src="trang-chu/script.js"></script>
+
+    <script>
+        // Form validation
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        } else {
+                            event.preventDefault();
+                            alert('Đăng ký thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.');
+                            form.reset();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+        // Event filter functionality
+        document.getElementById('search-btn').addEventListener('click', filterEvents);
+        document.getElementById('event-search').addEventListener('keyup', function(e) {
+            if (e.key === 'Enter') {
+                filterEvents();
+            }
+        });
+        
+        function filterEvents() {
+            const searchValue = document.getElementById('event-search').value.toLowerCase();
+            const categoryValue = document.getElementById('event-category').value;
+            const eventCards = document.querySelectorAll('.event-card');
+            
+            eventCards.forEach(card => {
+                const eventName = card.dataset.eventName.toLowerCase();
+                const eventCategory = card.dataset.eventCategory;
+                const shouldShowBySearch = !searchValue || eventName.includes(searchValue);
+                const shouldShowByCategory = categoryValue === 'all' || eventCategory === categoryValue;
+                
+                if (shouldShowBySearch && shouldShowByCategory) {
+                    card.closest('.col-lg-4').style.display = 'block';
+                } else {
+                    card.closest('.col-lg-4').style.display = 'none';
+                }
+            });
+        }
+
+        // Initialize the testimonial carousel with auto-sliding
+        document.addEventListener('DOMContentLoaded', function() {
+            var testimonialCarousel = new bootstrap.Carousel(document.getElementById('carouselExample'), {
+                interval: 5000,  // Auto-slide every 5 seconds
+                wrap: true       // Continuous looping
+            });
+        });
+    </script>
+
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            color: #212529;
+        }
+        
+        .section-subtitle {
+            color: #6c757d;
+            margin-bottom: 2rem;
+        }
+        
+        .section-header {
+            margin-bottom: 3rem;
+        }
+        
+        /* Hero Banner */
+        .hero-banner {
+            background: linear-gradient(135deg, #4a6bdf 0%, #2e51cc 100%);
+            color: white;
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero-actions {
+            margin-top: 2rem;
+        }
+        
+        .hero-image img {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Event cards */
+        .event-card {
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .event-image {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .event-image img {
+            transition: transform 0.5s ease;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .event-card:hover .event-image img {
+            transform: scale(1.05);
+        }
+        
+        .event-tag {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+        
+        .tag-color {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        
+        .tag-color-blue {
+            background-color: #4a6bdf;
+        }
+        
+        .tag-color-green {
+            background-color: #28a745;
+        }
+        
+        .tag-color-purple {
+            background-color: #6f42c1;
+        }
+        
+        .event-date-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .date-day {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #dc3545;
+        }
+        
+        .date-month {
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+        
+        .event-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+        
+        .event-title a {
+            color: #212529;
+            text-decoration: none;
+        }
+        
+        .event-title a:hover {
+            color: #4a6bdf;
+        }
+        
+        .event-meta {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        .meta-item {
+            margin-bottom: 0.5rem;
+        }
+        
+        .meta-item i {
+            margin-right: 5px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .event-description {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 1rem;
+        }
+        
+        .event-footer {
+            border-top: 1px solid #e9ecef;
+            padding-top: 1rem;
+        }
+        
+        .progress {
+            height: 8px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .progress-bar {
+            background-color: #4a6bdf;
+        }
+        
+        /* Why Join Events */
+        .why-join-events {
+            background-color: #f8f9fa;
+            padding: 5rem 0;
+        }
+        
+        .reason-card {
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .reason-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .icon-circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        
+        .icon-circle i {
+            font-size: 28px;
+        }
+        
+        .bg-primary-light {
+            background-color: rgba(74, 107, 223, 0.1);
+        }
+        
+        .bg-success-light {
+            background-color: rgba(40, 167, 69, 0.1);
+        }
+        
+        .bg-info-light {
+            background-color: rgba(23, 162, 184, 0.1);
+        }
+        
+        .reason-title {
+            margin: 1.5rem 0 1rem;
+            font-weight: 600;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 5rem 0;
+        }
+        
+        .testimonial-card {
+            background-color: #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border-radius: 10px;
+            padding: 25px;
+            height: 100%;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+        
+        .testimonial-quote {
+            font-size: 24px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .testimonial-content p {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .testimonial-avatar {
+            margin-right: 15px;
+        }
+        
+        .testimonial-avatar img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary-color);
+        }
+        
+        .testimonial-info h5 {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0;
+            color: #333;
+        }
+        
+        .testimonial-info span {
+            font-size: 14px;
+            color: #777;
+        }
+        
+        .testimonial-btn {
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        
+        .carousel-item {
+            padding: 15px 0;
+        }
+        
+        #testimonialCarousel .carousel-inner {
+            padding: 20px 0;
+        }
+        
+        /* Carousel Controls */
+        #testimonialCarousel .carousel-control-prev,
+        #testimonialCarousel .carousel-control-next {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0,0,0,0.3);
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.7;
+        }
+        
+        #testimonialCarousel .carousel-control-prev {
+            left: 10px;
+        }
+        
+        #testimonialCarousel .carousel-control-next {
+            right: 10px;
+        }
+        
+        #testimonialCarousel .carousel-control-prev:hover,
+        #testimonialCarousel .carousel-control-next:hover {
+            background-color: rgba(0,0,0,0.5);
+            opacity: 1;
+        }
+        
+        /* Registration Form */
+        .registration-form {
+            background-color: #f8f9fa;
+        }
+        
+        .form-container {
+            border-radius: 10px;
+        }
+        
+        .form-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-subtitle {
+            font-size: 0.95rem;
+        }
+        
+        /* Event Stats */
+        .event-stats-card {
+            border-radius: 10px;
+        }
+        
+        .stat-value {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive fixes */
+        @media (max-width: 991.98px) {
+            .hero-banner {
+                padding: 3rem 0;
+                text-align: center;
+            }
+            
+            .hero-image {
+                margin-top: 2rem;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .reason-card, .testimonial-card, .event-card {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        /* Custom CSS */
+        .hero-content {
+            z-index: 1;
+            position: relative;
+        }
+
+        .feature-card {
+            height: 100%;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .section-badge {
+            background-color: rgba(var(--bs-primary-rgb), 0.1);
+            color: var(--bs-primary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .event-card {
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            height: 100%;
+            transition: transform 0.3s;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+
+        .event-date {
+            background-color: var(--bs-primary);
+            color: white;
+            text-align: center;
+            padding: 0.5rem;
+            font-weight: 700;
+        }
+
+        /* Custom Styles */
+        .carousel-inner {
+            padding-bottom: 40px;
+        }
+        
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .carousel-control-prev {
+            left: 10px;
+        }
+        
+        .carousel-control-next {
+            right: 10px;
+        }
+        
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .carousel-indicators {
+            bottom: 0;
+        }
+        
+        .carousel-indicators button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 5px;
+        }
+        
+        .carousel-indicators .active {
+            background-color: #007bff;
+        }
+        
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
 </body>
 </html>
+
+
